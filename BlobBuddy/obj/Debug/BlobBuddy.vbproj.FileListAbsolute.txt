@@ -1,0 +1,54 @@
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\Interop.AgentObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\Interop.AgentServerObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\AxInterop.AgentObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\BlobBuddy.vbproj.ResolveComReference.cache
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\BlobBuddy.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\CircusPals.exe.config
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.AboutBoxNew.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.Form1.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.NameForm.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.OptionsForm.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.ThreatDetected.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\CircusPals.exe
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\CircusPals.pdb
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\CircusPals.xml
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\Interop.AgentObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\Interop.AgentServerObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\bin\Debug\AxInterop.AgentObjects.dll
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.GamesWindow.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.Resources.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.SplashScreen1.resources
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.exe
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.xml
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.pdb
+C:\Documents and Settings\Jordon\Desktop\CircusPals\BlobBuddy\obj\Debug\CircusPals.BlobSingsForm.resources
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.exe.config
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\Interop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\Interop.AgentServerObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\AxInterop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\BlobBuddy.vbproj.ResolveComReference.cache
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\ResolveAssemblyReference.cache
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.AboutBoxNew.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.BlobSingsForm.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.Form1.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.NameForm.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.OptionsForm.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.GamesWindow.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.Resources.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.SplashScreen1.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.ThreatDetected.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\BlobBuddy.vbproj.GenerateResource.Cache
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.exe
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.pdb
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\Interop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\Interop.AgentServerObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\AxInterop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.exe
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.pdb
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.exe.config
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.exe
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.pdb
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.xml

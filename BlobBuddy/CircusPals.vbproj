@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23D0C9E5-C8E9-4429-A577-062330F75D6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CircusPals.My.MyApplication</StartupObject>
+    <RootNamespace>CircusPals</RootNamespace>
+    <AssemblyName>CircusPals</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>circuspalsicon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CircusPals.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CircusPals.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxNew.Designer.vb">
+      <DependentUpon>AboutBoxNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBoxNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BlobSingsForm.designer.vb">
+      <DependentUpon>BlobSingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlobSingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameForm.Designer.vb">
+      <DependentUpon>NameForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.vb">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamesWindow.Designer.vb">
+      <DependentUpon>GamesWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GamesWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreatDetected.Designer.vb">
+      <DependentUpon>ThreatDetected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThreatDetected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBoxNew.resx">
+      <DependentUpon>AboutBoxNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlobSingsForm.resx">
+      <DependentUpon>BlobSingsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamesWindow.resx">
+      <DependentUpon>GamesWindow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreatDetected.resx">
+      <DependentUpon>ThreatDetected.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AgentServerObjects">
+      <Guid>{A7B93C73-7B81-11D0-AC5F-00C04FD97575}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="circuspalsicon.ico" />
+    <None Include="Resources\agent_icon.gif" />
+    <None Include="Resources\CaineShare.png" />
+    <Content Include="Resources\circus_pals_logo.gif" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\SingOff.png" />
+    <None Include="Resources\SingOn.png" />
+    <None Include="Resources\jordon_button.png" />
+    <None Include="Resources\mushbutton.gif" />
+    <None Include="Resources\mashbutton.gif" />
+    <None Include="Resources\computerbg2.png" />
+    <None Include="Resources\CircusBackground.bmp" />
+    <None Include="Resources\SplashScreen.gif" />
+    <None Include="Resources\game_spud.gif" />
+    <None Include="Resources\game_haunt.gif" />
+    <None Include="Resources\game_candy.gif" />
+    <None Include="Resources\game_gloinks.gif" />
+    <None Include="Resources\GameScreen.png" />
+    <None Include="Resources\lazer98.gif" />
+    <None Include="Resources\AboutBanner.png" />
+    <None Include="Resources\CircusBit.bmp" />
+    <None Include="Resources\lb_bluebg.png" />
+    <None Include="Resources\Speak1.png" />
+    <None Include="Resources\Fact.png" />
+    <None Include="Resources\Animate.png" />
+    <None Include="Resources\Joke.png" />
+    <None Include="Resources\Games.png" />
+    <None Include="Resources\CircusUpdate.png" />
+    <None Include="Resources\MASH.png" />
+    <None Include="Resources\_Stop.png" />
+    <None Include="Resources\Surf.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\BackgroundWatch.png" />
+    <None Include="Resources\CaineBG.bmp" />
+    <None Include="Resources\DialogBackground.png" />
+    <None Include="Resources\circuspals_firsttime.wav" />
+    <None Include="Resources\cosmicbutton.png" />
+    <None Include="Resources\cosmiclogo1.png" />
+    <None Include="Resources\maxalert_rewritten_logo.png" />
+    <None Include="Resources\aboutboxnewprototypr.png" />
+    <None Include="Resources\JungleThemeNew.png" />
+    <None Include="Resources\CompUpdate2.png" />
+    <None Include="Resources\tabcontrolmodulejungle.bmp" />
+    <None Include="Resources\bonkeyupdate.png" />
+    <None Include="Resources\almost_invisible_max2.png" />
+    <None Include="Resources\transparent.png" />
+    <None Include="Resources\almost_invisible_max1.png" />
+    <None Include="Resources\almost_invisible_max.png" />
+    <None Include="Resources\panelbg1.png" />
+    <None Include="Resources\panelbg.png" />
+    <None Include="Resources\cosmiclogo.png" />
+    <None Include="Resources\lightbluebg1.png" />
+    <None Include="Resources\lightbluebg.png" />
+    <None Include="Resources\stop2.png" />
+    <None Include="Resources\runmsh.png" />
+    <None Include="Resources\listening.png" />
+    <None Include="Resources\wave.png" />
+    <None Include="Resources\amazingfact.png" />
+    <None Include="Resources\pleased.png" />
+    <None Include="Resources\scout.png" />
+    <None Include="Resources\maxalerttransparentbgfixed.png" />
+    <None Include="Resources\maxalertbg.png" />
+    <None Include="Resources\tabcontrolhider2.png" />
+    <None Include="Resources\tabcontrolhider.png" />
+    <None Include="Resources\speak.png" />
+    <None Include="Resources\moveright.png" />
+    <None Include="Resources\gestureright2.png" />
+    <None Include="Resources\gestureright.png" />
+    <None Include="Resources\updatebuttonwithbg.png" />
+    <None Include="Resources\updatebutton.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\hostedon.png" />
+    <None Include="Resources\agent_button.gif" />
+    <None Include="Resources\bonzibg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

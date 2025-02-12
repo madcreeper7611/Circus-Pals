@@ -1,0 +1,36 @@
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\ResolveAssemblyReference.cache
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\Interop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\Interop.AgentServerObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\AxInterop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.vbproj.ResolveComReference.cache
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.AboutBoxNew.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.Form1.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.NameForm.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.OptionsForm.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.GamesWindow.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.Resources.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.SplashScreen1.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.ThreatDetected.resources
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.vbproj.GenerateResource.Cache
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.exe.config
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.exe
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.pdb
+C:\Users\Logan\OneDrive\Documents\MSAgents\CircusPals\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.exe
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.pdb
+D:\CircusPals Decomp\BlobBuddy\obj\Debug\CircusPals.BlobSingsForm.resources
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\CircusPals.exe.config
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\CircusPals.exe
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\CircusPals.pdb
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\Interop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\Interop.AgentServerObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debus\AxInterop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.exe.config
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.exe
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.pdb
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\CircusPals.xml
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\Interop.AgentObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\Interop.AgentServerObjects.dll
+D:\CircusPals Decomp\BlobBuddy\bin\Debug\AxInterop.AgentObjects.dll

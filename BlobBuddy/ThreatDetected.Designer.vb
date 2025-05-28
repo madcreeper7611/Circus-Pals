@@ -68,10 +68,10 @@ Partial Class ThreatDetected
         Me.Label5.ForeColor = System.Drawing.Color.Red
         Me.Label5.Location = New System.Drawing.Point(4, 143)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(423, 13)
+        Me.Label5.Size = New System.Drawing.Size(273, 26)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "NOTE: This program is not an anti-virus. Get to scanning immediately with an actu" & _
-            "al one!"
+        Me.Label5.Text = "NOTE: This program is not an anti-virus. Get to scanning" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "immediately with an act" & _
+            "ual one!"
         '
         'Button1
         '

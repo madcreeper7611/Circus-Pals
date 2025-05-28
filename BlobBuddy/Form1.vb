@@ -49,17 +49,17 @@ Public Class Form1
         End If
         If My.Settings.Theme = 1 Then
             Me.Label2.Show()
-            Me.WackyWatch.Hide()
-            Me.ComputerUpdate.Show()
-            Me.BackgroundImage = My.Resources.computerbg2
-            Me.JungleUpdate.Hide()
+            Me.WackyWatch.Show()
+            Me.ComputerUpdate.Hide()
+            Me.JungleUpdate.Show()
+            Me.BackgroundImage = My.Resources.PomniBackground
             Me.ComputerBackgroundOptimizer.Show()
             Me.JungleBGModule.Hide()
         End If
         If My.Settings.Theme = 2 Then
             Me.WackyWatch.Show()
-            Me.ComputerUpdate.Hide()
             Me.JungleUpdate.Show()
+            Me.ComputerUpdate.Hide()
             Me.BackgroundImage = My.Resources.CircusBackground
             Me.ComputerBackgroundOptimizer.Hide()
             Me.JungleBGModule.Show()
@@ -75,34 +75,47 @@ Public Class Form1
         If My.Settings.isFirstRun Then
             My.Settings.isFirstRun = False
             My.Settings.Save()
-
-            AxAgent1.Characters.Load("Caine", DATAPATH)
-            Caine = AxAgent1.Characters("Caine")
-            Caine.LanguageID = 1033
-            Timer1.Enabled = True ' Enable the Timer control
-            My.Computer.Audio.Play(My.Resources.circuspals_firsttime, AudioPlayMode.Background)
-            Caine.MoveTo(320, 240)
-            Caine.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
-            Caine.Show()
-            Me.Show()
-            Caine.Speak("\Vol=65535\\Pit=136\Welcome! \rst\\Vol=65535\\Spd=150\To The \emp\Amazing Digital Desktop!")
-            Caine.Play("Restpose")
-            Caine.Speak("\Vol=65535\I don't believe we've been properly introduced.")
-            Caine.Play("Greet")
-            Caine.Speak("\Vol=65535\My name is Caine!")
-            Caine.Play("Restpose")
-            Caine.Speak("\Vol=65535\What is \emp\ your name?")
-
-
-
+            Try
+                AxAgent1.Characters.Load("Caine", DATAPATH)
+                Caine = AxAgent1.Characters("Caine")
+                Caine.LanguageID = 1033
+                Timer1.Enabled = True ' Enable the Timer control
+                My.Computer.Audio.Play(My.Resources.circuspals_firsttime, AudioPlayMode.Background)
+                Caine.MoveTo(320, 240)
+                Caine.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
+                Caine.Show()
+                Me.Show()
+                Caine.Speak("\Vol=65535\\Pit=136\Welcome! \rst\\Vol=65535\\Spd=150\To The \emp\Amazing Digital Desktop!")
+                Caine.Play("Restpose")
+                Caine.Speak("\Vol=65535\I don't believe we've been properly introduced.")
+                Caine.Play("Greet")
+                Caine.Speak("\Vol=65535\My name is Caine!")
+                Caine.Play("Restpose")
+                Caine.Speak("\Vol=65535\What is \emp\ your name?")
+            Catch Ex As Exception
+                My.Computer.Audio.Play(My.Resources.msagent_error, AudioPlayMode.Background)
+                Dim ErrorBox As DialogResult = MsgBox("You need to install MSAgent or Caine.acs to use the program, otherwise Caine won't show up." & vbCrLf & "" & vbCrLf & "Do you want to close the application? (NOTE: Clicking ""No"" will result in even more errors without MSAgent)", 65556, "Whoops!")
+                If ErrorBox = DialogResult.Yes Then
+                    allowClose = True
+                    Me.Close()
+                End If
+            End Try
         Else
-
-            AxAgent1.Characters.Load("Caine", DATAPATH)
-            Caine = AxAgent1.Characters("Caine")
-            Caine.LanguageID = 1033
-            Caine.MoveTo(320, 240)
-            Caine.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
-            Caine.Show()
+            Try
+                AxAgent1.Characters.Load("Caine", DATAPATH)
+                Caine = AxAgent1.Characters("Caine")
+                Caine.LanguageID = 1033
+                Caine.MoveTo(320, 240)
+                Caine.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
+                Caine.Show()
+            Catch Ex As Exception
+                My.Computer.Audio.Play(My.Resources.msagent_error, AudioPlayMode.Background)
+                Dim ErrorBox As DialogResult = MsgBox("You need to install MSAgent or Caine.acs to use the program, otherwise Caine won't show up." & vbCrLf & "" & vbCrLf & "Do you want to close the application? (NOTE: Clicking ""No"" will result in even more errors without MSAgent)", 65556, "Whoops!")
+                If ErrorBox = DialogResult.Yes Then
+                    allowClose = True
+                    Me.Close()
+                End If
+            End Try
 
             If CurrentDate.Text.Contains("Date") Then
                 CurrentDate.Text = DateTime.Now.Date
@@ -178,7 +191,6 @@ Public Class Form1
                 Caine.Speak("\Vol=65535\Also Happy Birthday to Laser Boy!")
             End If
         End If
-
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -453,6 +465,12 @@ Public Class Form1
         Caine.Play("Blink")
     End Sub
 
+    Private Sub AxAgent1_DragStart(ByVal sender As Object, ByVal e As AxAgentObjects._AgentEvents_DragStartEvent) Handles AxAgent1.DragStart
+        Caine.Stop()
+        Caine.Play("Surprised")
+        Caine.Play("Blink")
+    End Sub
+
     Private Sub AxAgent1_DragComplete(ByVal sender As Object, ByVal e As AxAgentObjects._AgentEvents_DragCompleteEvent) Handles AxAgent1.DragComplete
         Dim random5 As New Random()
         Dim randomNumber As Integer = random5.Next(1, 26)
@@ -572,24 +590,6 @@ Public Class Form1
 
     Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
         OptionsForm.Show()
-    End Sub
-
-    Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
-        Caine.Play("Congratulate2")
-        Caine.Speak("Alright, lets share it!")
-        Caine.Play("RestPose")
-        Dim webAddress As String = "https://bsky.app/intent/compose?text=Check%20out%20this%20awesome%20program!%20%20https%3A//circuspals.w10.site%20via%20Laser%20Boy%20Studios!"
-        Process.Start(webAddress)
-
-    End Sub
-
-
-    Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
-        Caine.Play("Pleased")
-        Caine.Speak("Ah yes! The old ways of sharing particular files.")
-        Caine.Play("RestPose")
-        Dim webAddress As String = "mailto:info@example.com?&subject=&cc=&bcc=&body=http://circuspals.w10.site"
-        Process.Start(webAddress)
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -855,9 +855,6 @@ Public Class Form1
 
     Private Sub PictureBox13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox13.Click
         GamesWindow.Show()
-        Caine.Play("Announce")
-        Caine.Speak("\Vol=65535\Welcome to the \emp\games menu! Now which one do you wanna play?")
-        Caine.Play("Restpose")
     End Sub
 
 
@@ -875,6 +872,9 @@ Public Class Form1
         Dim processes5 As Process() = Process.GetProcessesByName("Bonzify")
         Dim processes6 As Process() = Process.GetProcessesByName("BonziKill")
         Dim processes7 As Process() = Process.GetProcessesByName("BonzaiKill")
+        Dim processes8 As Process() = Process.GetProcessesByName("BonziBDY_2")
+        Dim processes9 As Process() = Process.GetProcessesByName("BonziBDY_35")
+        Dim processes10 As Process() = Process.GetProcessesByName("BonziBDY_4")
 
         If processes.Length > 0 Then
             For Each process As Process In processes
@@ -973,6 +973,54 @@ Public Class Form1
             Next
         End If
         If processes7.Length > 0 Then
+            For Each process As Process In processes
+                Try
+                    Caine.Play("DoMagic1")
+                    Caine.Speak("Oops! Looks like one of \emp\those programs made it through!")
+                    Caine.Play("DoMagic2")
+                    process.Kill()
+                    Caine.Speak("I know you \emp\love your desktop buddies " + My.Settings.Name + ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
+                    Caine.Play("Uncertain")
+                    Caine.Speak("Who \emp\knows what could happen...")
+                    ThreatDetected.Show()
+                Catch ex As Exception
+
+                End Try
+            Next
+        End If
+        If processes8.Length > 0 Then
+            For Each process As Process In processes
+                Try
+                    Caine.Play("DoMagic1")
+                    Caine.Speak("Oops! Looks like one of \emp\those programs made it through!")
+                    Caine.Play("DoMagic2")
+                    process.Kill()
+                    Caine.Speak("I know you \emp\love your desktop buddies " + My.Settings.Name + ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
+                    Caine.Play("Uncertain")
+                    Caine.Speak("Who \emp\knows what could happen...")
+                    ThreatDetected.Show()
+                Catch ex As Exception
+
+                End Try
+            Next
+        End If
+        If processes9.Length > 0 Then
+            For Each process As Process In processes
+                Try
+                    Caine.Play("DoMagic1")
+                    Caine.Speak("Oops! Looks like one of \emp\those programs made it through!")
+                    Caine.Play("DoMagic2")
+                    process.Kill()
+                    Caine.Speak("I know you \emp\love your desktop buddies " + My.Settings.Name + ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
+                    Caine.Play("Uncertain")
+                    Caine.Speak("Who \emp\knows what could happen...")
+                    ThreatDetected.Show()
+                Catch ex As Exception
+
+                End Try
+            Next
+        End If
+        If processes10.Length > 0 Then
             For Each process As Process In processes
                 Try
                     Caine.Play("DoMagic1")
@@ -1492,22 +1540,6 @@ Public Class Form1
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Face_Booked_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Face_Booked.Click
-        Caine.Play("Congratulate2")
-        Caine.Speak("Remember, friends only!")
-        Caine.Play("RestPose")
-        Dim webAddress As String = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcircuspals.w10.site"
-        Process.Start(webAddress)
-    End Sub
-
-    Private Sub RedditButt_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RedditButt.Click
-        Caine.Play("Congratulate2")
-        Caine.Speak("Upvotes, please!")
-        Caine.Play("RestPose")
-        Dim webAddress As String = "http://old.reddit.com/submit?url=https%3A%2F%2Fcircuspals.w10.site%2F&title=Check%20out%20this%20awesome%20program!%20"
-        Process.Start(webAddress)
-    End Sub
-
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
         Dim processes() As Process = Process.GetProcessesByName("MashPlay")
 
@@ -1591,6 +1623,75 @@ Public Class Form1
 
     Private Sub SongButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SongButton.Click
         BlobSingsForm.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        If RadioButton1.Checked = True Then
+            Caine.Play("Pleased")
+            Caine.Speak("Ah yes! The old ways of sharing particular files.")
+            Caine.Play("RestPose")
+            Dim webAddress As String = "mailto:info@example.com?&subject=&cc=&bcc=&body=http://circuspals.w10.site"
+            Process.Start(webAddress)
+        End If
+        If RadioButton2.Checked = True Then
+            Caine.Play("Congratulate2")
+            Caine.Speak("Upvotes, please!")
+            Caine.Play("RestPose")
+            Dim webAddress As String = "http://old.reddit.com/submit?url=https%3A%2F%2Fcircuspals.w10.site%2F&title=Check%20out%20this%20awesome%20program!%20"
+            Process.Start(webAddress)
+        End If
+        If RadioButton3.Checked = True Then
+            Caine.Play("Congratulate2")
+            Caine.Speak("Alright, lets share it!")
+            Caine.Play("RestPose")
+            Dim webAddress As String = "https://bsky.app/intent/compose?text=Check%20out%20this%20awesome%20program!%20%20https%3A//circuspals.w10.site%20via%20Laser%20Boy%20Studios!"
+            Process.Start(webAddress)
+        End If
+        If RadioButton4.Checked = True Then
+            Caine.Play("Congratulate2")
+            Caine.Speak("What's App, dog!")
+            Caine.Play("RestPose")
+            Dim webAddress As String = "https://api.whatsapp.com/send?text=Check out this awesome program%3A https%3A%2F%2Fcircuspals.w10.site%2Fdownload.html"
+            Process.Start(webAddress)
+        End If
+    End Sub
+
+    Private Sub Button10_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.MouseHover
+        Button10.BackColor = Color.White
+    End Sub
+    Private Sub Button1_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.MouseHover
+        Button1.BackColor = Color.White
+    End Sub
+    Private Sub Button20_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.MouseHover
+        Button20.BackColor = Color.White
+    End Sub
+    Private Sub Button16_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.MouseHover
+        Button16.BackColor = Color.White
+    End Sub
+    Private Sub Button6_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.MouseHover
+        Button6.BackColor = Color.White
+    End Sub
+    Private Sub Button5_Hover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.MouseHover
+        Button5.BackColor = Color.White
+    End Sub
+
+    Private Sub Button10_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.MouseLeave
+        Button10.BackColor = Color.DodgerBlue
+    End Sub
+    Private Sub Button1_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.MouseLeave
+        Button1.BackColor = Color.DodgerBlue
+    End Sub
+    Private Sub Button20_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.MouseLeave
+        Button20.BackColor = Color.DodgerBlue
+    End Sub
+    Private Sub Button16_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.MouseLeave
+        Button16.BackColor = Color.DodgerBlue
+    End Sub
+    Private Sub Button6_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.MouseLeave
+        Button6.BackColor = Color.DodgerBlue
+    End Sub
+    Private Sub Button5_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.MouseLeave
+        Button5.BackColor = Color.DodgerBlue
     End Sub
 End Class
 

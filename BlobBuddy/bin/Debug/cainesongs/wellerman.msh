@@ -1,0 +1,30 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Caine=Caine.acs
+
+[LanguageIDs]
+Caine=&H409
+
+[Script]
+Caine.Play "FastExplain"
+Caine.Balloon.Style = &H31C000D
+Caine.Speak "\Chr=""Monotone""\\Pit=196\\Spd=130\There \Pit=131\once was a ship \Pit=156\that \Pit=196\put to sea, the \Pit=208\name \Pit=175\of the ship \Pit=208\was the \Pit=262\Billy \Pit=196\O' Tea"
+Caine.Speak "\Chr=""Monotone""\\Pit=196\\Spd=130\The \Pit=131\winds blew up \Pit=156\her \Pit=196\bow dipped down, blow \Pit=175\my \Pit=156\bully \Pit=147\boys \Pit=131\blow!"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\Soon may \Pit=208\the \map=""\Pit=233\Weller \Pit=196\man""=""Wellerman""\ come to \Pit=208\bring \Pit=175\us sugar \Pit=208\and \Pit=196\tea \Pit=156\and \Pit=131\rum,"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\One day \Pit=208\when the \Pit=233\tonguing \Pit=196\is done we'll take \Pit=175\our \Pit=156\leave \Pit=147\and \Pit=131\go!"
+Caine.Speak "\Chr=""Monotone""\\Pit=196\\Spd=130\As \Pit=131\far as I've heard \Pit=156\the \Pit=196\fight is on, the \Pit=208\line's \Pit=175\not cut \Pit=208\and the \Pit=262\whale's \Pit=196\not gone"
+Caine.Speak "\Chr=""Monotone""\\Pit=196\\Spd=130\The \Pit=131\Wellarman makes \Pit=156\his \Pit=196\regular call to encourage\Pit=175\the \Pit=156\captain \Pit=147\crew and \Pit=131\all!"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\Soon may \Pit=208\the \map=""\Pit=233\Weller \Pit=196\man""=""Wellerman""\ come to \Pit=208\bring \Pit=175\us sugar \Pit=208\and \Pit=196\tea \Pit=156\and \Pit=131\rum,"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\One day \Pit=208\when the \Pit=233\tonguing \Pit=196\is done we'll take \Pit=175\our \Pit=156\leave \Pit=147\and \Pit=131\go!"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\Soon may \Pit=208\the \map=""\Pit=233\Weller \Pit=196\man""=""Wellerman""\ come to \Pit=208\bring \Pit=175\us sugar \Pit=208\and \Pit=196\tea \Pit=156\and \Pit=131\rum,"
+Caine.Speak "\Chr=""Monotone""\\Pit=262\\Spd=130\One day \Pit=208\when the \Pit=233\tonguing \Pit=196\is done we'll \Spd=80\take \Pit=175\our \Pit=156\leave \Pit=147\and \Pit=131\go!"
+Caine.Play "Acknowledge"
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

@@ -14,10 +14,16 @@ Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Pleas
 # License
 This source code is licensed under the Mozilla Public License 2.0. By using this source code, you accept all conditions of the MPL 2.0 license agreement, including code attribution and all the other legal stuff inside of it that would take to long to list individually.
 
-==Compile Instructions==
+# Compile Instructions
+==Main and Wacky Book==
 NOTE: I recommend you use Visual Studio 2008, as that it is what I use to develop.
 1. Open the solution file.
 2. Click compile!
+3. Run and test the program!
+==Gloinks game==
+NOTE: I recommend you use The Games Factory, as that it is what I use to develop.
+1. Open the .gam file
+2. Click save as standalone game!
 3. Run and test the program!
 
 # Official Site

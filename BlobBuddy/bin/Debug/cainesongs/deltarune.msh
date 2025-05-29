@@ -1,0 +1,40 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Caine=Caine.acs
+
+[LanguageIDs]
+Caine=&H409
+
+[Script]
+Caine.Play "Explain"
+Caine.Balloon.Style = &H21C000F
+Caine.Speak "Here's one Queenie used to sing to Kinger, I hope you like it."
+Caine.Speak "\mrk=1\"
+Caine.Play "FastExplain"
+Caine.Speak "\Chr=""Monotone""\\Pit=139\\Spd=50\When \Pit=147\the \Pit=165\\Spd=130\light \Spd=100\is \Spd=50\running \Spd=130\low"
+Caine.Speak "\Chr=""Monotone""\\Pit=110\\Spd=50\and \Pit=139\\Spd=100\the \Pit=123\\Spd=130\shadows start \Pit=110\\Spd=50\to \Pit=123\\Spd=130\grow"
+Caine.Speak "\Chr=""Monotone""\\Pit=139\\Spd=50\and \Pit=123\\Spd=100\the \Pit=110\\Spd=130\places \Spd=70\that \Spd=100\you \Spd=130\know"
+Caine.Speak "\Chr=""Monotone""\\Pit=208\\Spd=100\seem \Pit=220\like\Map=""\Pit=208\\Spd=50\fan \Pit=165\tuh \Pit=139\see...""=""fantasy...""\"
+Caine.Speak "\Chr=""Monotone""\\Pit=139\\Spd=50\There's \Pit=50\a \Pit=165\\Spd=50\light \Spd=100\inside \Spd=100\your \Spd=130\soul"
+Caine.Speak "\Chr=""Monotone""\\Pit=110\\Spd=150\that's \Pit=139\\Spd=100\still \Pit=123\\Spd=100\shining in\Pit=110\\Spd=50\the \Pit=123\\Spd=130\cold"
+Caine.Speak "\Chr=""Monotone""\\Pit=139\\Spd=50\with \Pit=123\\Spd=100\the \Pit=110\\Spd=130\truth!"
+Caine.Speak "\Chr=""Monotone""\\Pit=82\\Spd=100\The\Map=""\Pit=139\prah \Pit=147\\Spd=150\miss""=""promise""\\Pit=123\\Spd=50\in \Pit=110\\Spd=150\our \Spd=50\hearts..."
+Caine.Speak "..."
+Caine.Speak "\Chr=""Monotone""\\Pit=139\Don't\Map=""\Pit=123\for \Pit=110\get!'""=""forget!""\"
+Caine.Speak "\Chr=""Monotone""\\Pit=82\\Spd=100\I'm \Pit=139\\Spd=50\with \Pit=147\\Spd=100\you \Pit=123\\Spd=50\in \Pit=110\the dark...!"
+Caine.Play "Acknowledge"
+
+[Bookmarks]
+1=
+
+[BookmarkScript:1]
+Caine.Balloon.Style = &H31C000D
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

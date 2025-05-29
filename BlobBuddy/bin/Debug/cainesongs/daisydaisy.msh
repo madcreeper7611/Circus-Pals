@@ -1,0 +1,29 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Caine=Caine.acs
+
+[LanguageIDs]
+Caine=&H409
+
+[Script]
+Caine.Balloon.Style = &H31C000D
+Caine.Play "FastExplain"
+Caine.Speak "\chr="monotone"\\spd=60\\pit=120\Dai \pit=100\zee, \pit=80\Dai \pit=60\zee"
+Caine.Speak "\chr="monotone"\\spd=120\\pit=68\Give \pit=74\me \pit=80\your \pit=68\an, \pit=80\ser \pit=60\true."
+Caine.Speak "\chr="monotone"\\spd=50\\pit=92\I'm \pit=120\half\pit=100\cray \pit=80\zee,"
+Caine.Speak "\chr="monotone"\\spd=115\\pit=68\All \pit=74\for \pit=80\the \pit=80\love \pit=100\of \pit=92\you."
+Caine.Speak "\Chr=""Monotone""\\spd=80\\pit=100\It \pit=112\won't \pit=110\be \pit=92\a \pit=120\sty-\pit=100\lish \pit=92\mare\pit=80\rege."
+Caine.Speak "\Chr=""Monotone""\\spd=100\\pit=92\I \pit=100\can't \pit=80\a \pit=68\ford, \pit=80\a \pit=68\care- \pit=60\ridge."
+Caine.Speak "\Chr=""Monotone""\\spd=100\\pit=60\But \pit=80\you'll \pit=100\look \pit=92\sweet,"
+Caine.Speak "\Chr=""Monotone""\\spd=90\\pit=60\Up \pit=80\on \pit=100\the \pit=92\seat"
+Caine.Speak "\Chr=""Monotone""\\spd=100\\pit=100\Of \pit=112\a \pit=120\by \pit=100\sic \pit=80\cull \pit=92\built, \pit=60\for \pit=80\two."
+Caine.Play "Acknowledge"
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

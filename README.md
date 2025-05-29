@@ -4,7 +4,7 @@ Welcome to the Circus Pals repository! This repository contains the source code 
 Please note that Circus Pals and all other Laser Boy products, such as Kinito After Story are closed source, and the source will only be available to trusted members and the owner of TMAFE.
 
 # Introduction
-Circus Pals Rewritten brings everyone's favorite Teeth-Head, Caine, to your desktop! Please note that this project is a fan-based tie-in program. The Amazing Digital Circus is owned by Screen Australia, GLITCH Productions, SMG4 and Gooseworx. Please support the official release!
+Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Please note that this project is a fan-based tie-in program. The Amazing Digital Circus is owned by Screen Australia, GLITCH Productions, SMG4 and Gooseworx. Please support the official release!
 
 # Features
 * The Cicrus Pals program based on a recreation of the original MaxALERT program by Konnor88

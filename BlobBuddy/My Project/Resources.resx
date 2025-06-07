@@ -118,32 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="moveright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\moveright.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cosmicbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cosmicbutton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stop2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Surf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Surf.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="panelbg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panelbg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jordon_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jordon_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabcontrolmodulejungle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabcontrolmodulejungle.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Games" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Games.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="almost_invisible_max1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\almost_invisible_max1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="game_gloinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_gloinks.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,17 +133,8 @@
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="listening" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listening.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CompUpdate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CompUpdate2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="mushbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mushbutton.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabcontrolhider2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabcontrolhider2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GameScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GameScreen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,29 +142,8 @@
   <data name="CircusUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CircusUpdate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lightbluebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lightbluebg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="almost_invisible_max" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\almost_invisible_max.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="scout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scout.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pleased" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pleased.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="game_spud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_spud.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="updatebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updatebutton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxalert_rewritten_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxalert_rewritten_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circuspals_firsttime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuspals_firsttime.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -202,9 +154,6 @@
   <data name="CircusBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CircusBackground.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cosmiclogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cosmiclogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Audio.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,14 +163,8 @@
   <data name="BackgroundWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackgroundWatch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="speak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speak.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Fact" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fact.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gestureright2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gestureright2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hostedon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hostedon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,35 +172,17 @@
   <data name="mashbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mashbutton.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gestureright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gestureright.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lazer98" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lazer98.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SingOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SingOff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="almost_invisible_max2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\almost_invisible_max2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxalerttransparentbgfixed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxalerttransparentbgfixed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="game_haunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_haunt.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cosmiclogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cosmiclogo1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agent_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agent_button.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="amazingfact" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\amazingfact.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CircusBit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CircusBit.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,21 +196,6 @@
   <data name="runmsh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\runmsh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="updatebuttonwithbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updatebuttonwithbg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bonzibg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bonzibg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aboutboxnewprototypr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aboutboxnewprototypr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SingOn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SingOn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="JungleThemeNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JungleThemeNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SingOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SingOn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -295,35 +205,8 @@
   <data name="game_candy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_candy.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maxalertbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxalertbg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="darkbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\darkbg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="computerbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computerbg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lb_bluebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lb_bluebg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bonkeyupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bonkeyupdate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="runmsh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\runmsh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lightbluebg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lightbluebg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CaineBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaineBG.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabcontrolhider" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabcontrolhider.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="panelbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panelbg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MASH.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -333,9 +216,6 @@
   </data>
   <data name="transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transparent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SingOff1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SingOff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Animate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Animate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -348,5 +228,20 @@
   </data>
   <data name="CaineShare" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaineShare.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msagent_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msagent_error.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="circuspals_games" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circuspals_games.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PomniBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PomniBackground.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonbutton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

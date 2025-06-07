@@ -200,7 +200,9 @@ Public Class ApplyForm
         CheckBox1.Checked = False
         ComboBox4.Text = "12:00"
         ComboBox3.Text = "AM"
-        ListView1.SelectedItems(0).Selected = False
+        If ListView1.SelectedItems.Count > 0 Then
+            ListView1.SelectedItems(0).Selected = False
+        End If
     End Sub
 
     Private Sub EnsureXmlFileExists()

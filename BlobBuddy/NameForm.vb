@@ -85,6 +85,17 @@ Public Class NameForm
             Form1.Caine.Play("Blink")
             Form1.Caine.Speak("\Vol=65535\Alright, back to my regular script!")
         End If
+        If My.Settings.Name = "Queenie" Then
+            My.Settings.Name = Environment.UserName
+            Me.Text = "Welcome to The Amazing Digital Circus, " + My.Settings.Name + "!"
+            My.Settings.Save()
+            Form1.Caine.Play("Decline")
+            Form1.Caine.Speak("\Vol=65535\Sorry, but that name is already taken.")
+            Form1.Caine.Play("Silly")
+            Form1.Caine.Speak("\Vol=65535\You think just because she's gone means her name is for sale?")
+            Form1.Caine.Play("Blink")
+            Form1.Caine.Speak("\Vol=65535\Alright, back to my regular script!")
+        End If
         If My.Settings.Name = "XDDCC" Then
             Me.Text = "Welcome to The Amazing Digital Circus, " + My.Settings.Name + "!"
             My.Settings.Save()
@@ -119,6 +130,19 @@ Public Class NameForm
             Form1.Caine.Play("Blink")
             Form1.Caine.Speak("\Vol=65535\Alright, back to my regular script!")
         End If
+        If My.Settings.Name.Contains("gond dnapxe") Or My.Settings.Name.Contains("gonD dnapxE") Then
+            My.Settings.Name = Environment.UserName
+            Me.Text = "Welcome to The Amazing Digital Circus, " + My.Settings.Name + "!"
+            My.Settings.Save()
+            Form1.Caine.Play("Giggle")
+            Form1.Caine.Speak("\Vol=65535\Nice try " + My.Settings.Name + ", you really thought you could outsmart me there? I will spell it backwards to see what it says.")
+            Form1.Caine.Play("Read")
+            Form1.Caine.Play("ReadReturn")
+            Form1.Caine.Play("Mad")
+            Form1.Caine.Speak("\Vol=65535\Expand \emp\What?! I shall call you \emp\no such thing! I will refer to you as " + My.Settings.Name + " from now on!")
+            Form1.Caine.Play("Blink")
+            Form1.Caine.Speak("\Vol=65535\Alright, back to my regular script!")
+        End If
         If My.Settings.Name.Contains("Vinesauce") Or My.Settings.Name.Contains("Joel") Then
             Form1.Caine.Play("Surprised")
             Form1.Caine.Speak("\Vol=65535\Is it really you, " + My.Settings.Name + "? I can't believe it, the legend is true!")
@@ -137,6 +161,12 @@ Public Class NameForm
             Form1.Caine.Play("Mad")
             Form1.Caine.Speak("\Vol=65535\Oh forget it!")
         End If
+        If My.Settings.Name.Contains("Sonic") Or My.Settings.Name.Contains("sonic") Then
+            Form1.Caine.Play("Think")
+            Form1.Caine.Speak("\Vol=65535\Surely this one cannot be given a cease and desist unlike the other one.")
+            Form1.Caine.Play("Blink")
+            Form1.Caine.Speak("\Vol=65535\Oh whatever.")
+        End If
         If My.Settings.Name.Equals("Big") Or My.Settings.Name.Equals("big") Then
             Form1.Caine.Play("Surprised")
             Form1.Caine.Height = 256
@@ -147,13 +177,19 @@ Public Class NameForm
             Form1.Caine.Play("Surprised")
             Form1.Caine.Height = 64
             Form1.Caine.Width = 64
-            Form1.Caine.Speak("\Vol=65535\\Pit=400\Oh no what have you done! Good thing this is temporary! \Pit=165\Alright, back to my regular script!")
+            Form1.Caine.Speak("\Vol=65535\\Pit=375\Oh no what have you done! Good thing this is temporary! \Pit=165\Alright, back to my regular script!")
         End If
         If My.Settings.Name.Equals("Gargantuan") Or My.Settings.Name.Equals("gargantuan") Then
             Form1.Caine.Play("Surprised")
             Form1.Caine.Height = 384
             Form1.Caine.Width = 384
             Form1.Caine.Speak("\Vol=65535\\Pit=50\Oh no what have you done! Good thing this is temporary! \Pit=165\Alright, back to my regular script!")
+        End If
+        If My.Settings.Name.Contains("Micro") Or My.Settings.Name.Contains("micro") Then
+            Form1.Caine.Play("Surprised")
+            Form1.Caine.Height = 32
+            Form1.Caine.Width = 32
+            Form1.Caine.Speak("\Vol=65535\\Pit=400\Oh no what have you done! Good thing this is temporary! \Pit=165\Alright, back to my regular script!")
         End If
         If My.Settings.Name.Contains("Crazy Dave") Or My.Settings.Name.Contains("crazy dave") Then
             Form1.Caine.Play("Think")
@@ -217,6 +253,22 @@ Public Class NameForm
             Form1.Caine.Speak("\Vol=65535\" + My.Settings.Name + "?")
             Form1.Caine.Play("Giggle")
             Form1.Caine.Speak("\Vol=65535\Jax would \emp\definitely love to know you! Alright, back to my regular script!")
+            Form1.Caine.Play("Blink")
+        End If
+        If My.Settings.Name.Contains("Lazer") Or My.Settings.Name.Contains("lazer") Or My.Settings.Name.Contains("Laser") Or My.Settings.Name.Contains("laser") Or My.Settings.Name.Contains("Logan") Or My.Settings.Name.Contains("logan") Or My.Settings.Name.Contains("Light Amplification by Stimulated Emission of Radiation") Then
+            Form1.Caine.Play("Greet")
+            Form1.Caine.Speak("\Vol=65535\You may come on in, master! Alright, back to my regular script!")
+            Form1.Caine.Play("Blink")
+        End If
+        If My.Settings.Name.Contains("Merlin") Or My.Settings.Name.Contains("merlin") Or My.Settings.Name.Contains("Genie") Or My.Settings.Name.Contains("genie") Then
+            Form1.Caine.Play("Explain")
+            Form1.Caine.Speak("\Vol=65535\I can tell that you must really love magic. Alright, back to my regular script!")
+            Form1.Caine.Play("Blink")
+        End If
+        If My.Settings.Name.Contains("Peedy") Then
+            Form1.Caine.Play("LookLeft")
+            Form1.Caine.Play("LookRight")
+            Form1.Caine.Speak("\Chr=""whisper""\\Vol=65535\Have you seen a purple gorilla around here? \Chr=""normal""\ Alright, back to my regular script!")
             Form1.Caine.Play("Blink")
         End If
         Form1.Caine.Play("Acknowledge")

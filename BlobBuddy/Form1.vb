@@ -4,6 +4,7 @@ Imports System
 Imports AgentObjects
 Imports AxAgentObjects
 Imports System.IO
+Imports System.Xml
 Imports System.Text
 Imports System.Media
 Imports System.Diagnostics
@@ -12,7 +13,9 @@ Imports System.Management
 Imports Microsoft.VisualBasic.CompilerServices
 
 Public Class Form1
+    Dim EventXML = Application.UserAppDataPath + "\events.xml"
     Private WithEvents processCheckTimer As Timer
+    Private XmlCtrl As New XmlDocument
     Private notifyIcon As NotifyIcon
     Public allowClose
     Public Caine As IAgentCtlCharacterEx
@@ -298,6 +301,7 @@ Public Class Form1
 
     Private Sub SpeakPic_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SpeakPic.Click
         UtilPanel1.Show()
+        UtilPanel2.Hide()
         UtilPanel3.Hide()
     End Sub
 
@@ -367,6 +371,7 @@ Public Class Form1
 
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox9.Click
         UtilPanel1.Hide()
+        UtilPanel2.Hide()
         UtilPanel3.Show()
 
     End Sub
@@ -391,7 +396,7 @@ Public Class Form1
 
     Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
         UtilPanel1.Hide()
-
+        UtilPanel2.Hide()
         UtilPanel3.Hide()
     End Sub
 
@@ -953,7 +958,7 @@ Public Class Form1
 
     Private Sub RandomSpeechTimer_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles RandomSpeechTimer.Tick
         Dim rnd As New Random()
-        Select Rnd.Next(1, 23)
+        Select Case rnd.Next(1, 23)
             Case 1
                 Caine.Play("Explain")
                 Caine.Speak(My.Settings.Name + "! Where did the time go?")
@@ -2122,5 +2127,47 @@ Public Class Form1
         Caine.Play("Acknowledge")
         Caine.Speak("\Chr=""Normal""\")
         Caine.Balloon.Style = &H21C000F
+    End Sub
+
+    Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
+        UtilPanel2.Hide()
+    End Sub
+
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+        ApplyForm.SelectedDate = MonthCalendar1.SelectionRange.Start()
+        ApplyForm.Show()
+    End Sub
+
+    Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
+        UtilPanel1.Hide()
+        UtilPanel2.Show()
+        UtilPanel3.Hide()
+    End Sub
+
+    Private Sub EventTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EventTimer.Tick
+        If File.Exists(EventXML) Then
+            Dim eventNode = XmlCtrl.SelectSingleNode("/Events/Event[RemindDate='" & Date.Now.ToShortDateString & "'][Reminder='True'][RemindTime='" & Date.Now.Hour.ToString & ":" & Date.Now.Minute.ToString & "'][RemindAMPM='" & Date.Now.ToString("tt") & "']")
+            If Not eventNode Is Nothing Then
+                Dim Rnd As New Random
+
+                Select Case Rnd.Next(1, 5)
+                    Case 1
+                        Caine.Speak("Don't forget!")
+                        Exit Select
+                    Case 2
+                        Caine.Speak("Hey buddy, just to let you know,")
+                        Exit Select
+                    Case 3
+                        Caine.Speak("Wow! I \emp\completely forgot!")
+                        Exit Select
+                    Case 4
+                        Caine.Speak(My.Settings.Name & ", did you remember?")
+                        Exit Select
+                End Select
+
+                Caine.Speak(eventNode("EventDesc").InnerText.ToString & " is scheduled for, or due on " & eventNode("EventDate").InnerText & " at " & eventNode("EventTime").InnerText & " " & eventNode("EventAMPM").InnerText & ".")
+                MessageBox.Show("Hey, " & My.Settings.Name & ", it's " & Date.Now.ToShortTimeString() & ". You asked me to remind you about '" & eventNode("EventDesc").InnerText & "'", "BonziBUDDY")
+            End If
+        End If
     End Sub
 End Class

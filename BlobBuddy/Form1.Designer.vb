@@ -113,6 +113,13 @@ Partial Class Form1
         Me.WackyWatch = New System.Windows.Forms.PictureBox
         Me.ReturnToSpot = New System.Windows.Forms.Timer(Me.components)
         Me.AxAgent1 = New AxAgentObjects.AxAgent
+        Me.UtilPanel2 = New System.Windows.Forms.Panel
+        Me.Button15 = New System.Windows.Forms.Button
+        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar
+        Me.Button23 = New System.Windows.Forms.Button
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox
+        Me.EventTimer = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -141,6 +148,8 @@ Partial Class Form1
         Me.UtilPanel3.SuspendLayout()
         CType(Me.WackyWatch, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.UtilPanel2.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -735,9 +744,6 @@ Partial Class Form1
         '
         Me.Timer1.Interval = 10000
         '
-        'Timer2
-        '
-        '
         'Timer3
         '
         Me.Timer3.Interval = 10000
@@ -760,19 +766,19 @@ Partial Class Form1
         Me.ExitToolStripMenu.Name = "ContextMenuStrip1"
         Me.ExitToolStripMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.ExitToolStripMenu.ShowImageMargin = False
-        Me.ExitToolStripMenu.Size = New System.Drawing.Size(120, 48)
+        Me.ExitToolStripMenu.Size = New System.Drawing.Size(125, 48)
         '
         'ToolStripMenuItem
         '
         Me.ToolStripMenuItem.Enabled = False
         Me.ToolStripMenuItem.Name = "ToolStripMenuItem"
-        Me.ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ToolStripMenuItem.Text = "Circus Pals 2.0"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         Me.ExitToolStripMenuItem.ToolTipText = "Exits the Application."
         '
@@ -1149,8 +1155,81 @@ Partial Class Form1
         Me.AxAgent1.Location = New System.Drawing.Point(0, 0)
         Me.AxAgent1.Name = "AxAgent1"
         Me.AxAgent1.OcxState = CType(resources.GetObject("AxAgent1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxAgent1.Size = New System.Drawing.Size(0, 0)
+        Me.AxAgent1.Size = New System.Drawing.Size(19, 32)
         Me.AxAgent1.TabIndex = 0
+        '
+        'UtilPanel2
+        '
+        Me.UtilPanel2.BackColor = System.Drawing.Color.Red
+        Me.UtilPanel2.BackgroundImage = CType(resources.GetObject("UtilPanel2.BackgroundImage"), System.Drawing.Image)
+        Me.UtilPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.UtilPanel2.Controls.Add(Me.Button15)
+        Me.UtilPanel2.Controls.Add(Me.MonthCalendar1)
+        Me.UtilPanel2.Controls.Add(Me.Button23)
+        Me.UtilPanel2.Controls.Add(Me.Label3)
+        Me.UtilPanel2.Location = New System.Drawing.Point(9, 85)
+        Me.UtilPanel2.Name = "UtilPanel2"
+        Me.UtilPanel2.Size = New System.Drawing.Size(203, 213)
+        Me.UtilPanel2.TabIndex = 23
+        Me.UtilPanel2.Visible = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.ForeColor = System.Drawing.Color.White
+        Me.Button15.Location = New System.Drawing.Point(143, 181)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(48, 23)
+        Me.Button15.TabIndex = 36
+        Me.Button15.Text = "Apply"
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'MonthCalendar1
+        '
+        Me.MonthCalendar1.Location = New System.Drawing.Point(13, 22)
+        Me.MonthCalendar1.Name = "MonthCalendar1"
+        Me.MonthCalendar1.TabIndex = 34
+        '
+        'Button23
+        '
+        Me.Button23.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button23.ForeColor = System.Drawing.Color.White
+        Me.Button23.Location = New System.Drawing.Point(13, 181)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(26, 23)
+        Me.Button23.TabIndex = 17
+        Me.Button23.Text = "<"
+        Me.Button23.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(3, 5)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(58, 15)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Calendar"
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox6.Image = Global.CircusPals.My.Resources.Resources.calendar
+        Me.PictureBox6.Location = New System.Drawing.Point(262, 9)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(64, 56)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 34
+        Me.PictureBox6.TabStop = False
+        '
+        'EventTimer
+        '
         '
         'Form1
         '
@@ -1158,9 +1237,11 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(632, 373)
-        Me.Controls.Add(Me.UtilPanel3)
+        Me.ClientSize = New System.Drawing.Size(624, 361)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.UtilPanel2)
         Me.Controls.Add(Me.UtilPanel1)
+        Me.Controls.Add(Me.UtilPanel3)
         Me.Controls.Add(Me.JungleUpdate)
         Me.Controls.Add(Me.JungleBGModule)
         Me.Controls.Add(Me.ComputerBackgroundOptimizer)
@@ -1218,6 +1299,9 @@ Partial Class Form1
         Me.UtilPanel3.PerformLayout()
         CType(Me.WackyWatch, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.UtilPanel2.ResumeLayout(False)
+        Me.UtilPanel2.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1314,5 +1398,12 @@ Partial Class Form1
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents UtilPanel2 As System.Windows.Forms.Panel
+    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents Button23 As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button15 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents EventTimer As System.Windows.Forms.Timer
 
 End Class

@@ -175,9 +175,9 @@ Public Class ApplyForm
             If ListView1.SelectedItems.Count > 0 Then
                 Dim selectedItem = ListView1.SelectedItems(0)
                 Dim selectedTime = selectedItem.SubItems(0).Text
-                Dim eventNode = XmlCtrl.SelectSingleNode("Events/Event[EventDate='" & SelectedDate.ToShortDateString & "'][EventTime='" & selectedTime.Substring(0, selectedTime.Length - 3) & "'][EventAMPM='" & selectedTime.Substring(selectedTime.Length - 2) & "'][EventDesc='" & selectedItem.SubItems(1).Text & "']")
+                Dim eventNode = XmlCtrl.SelectSingleNode("Events/Event[EventDate='" & SelectedDate.ToShortDateString() & "'][EventTime='" & selectedTime.Substring(0, selectedTime.Length - 3) & "'][EventAMPM='" & selectedTime.Substring(selectedTime.Length - 2) & "']")
 
-                If Not eventNode Is Nothing Then
+                If Not eventNode Is Nothing AndAlso eventNode("EventDesc").InnerText = selectedItem.SubItems(1).Text Then
                     If eventNode("Reminder").InnerText = "True" Then
                         CheckBox1.Checked = True
                     End If

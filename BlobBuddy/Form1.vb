@@ -31,6 +31,7 @@ Public Class Form1
     End Sub
 
     Public Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        EventTimer.Start()
         RandomSpeechTimer.Start()
         If My.Settings.TrackBarValue = 1 Then
             Me.RandomSpeechTimer.Interval = 60000
@@ -2146,8 +2147,10 @@ Public Class Form1
 
     Private Sub EventTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EventTimer.Tick
         If File.Exists(EventXML) Then
-            Dim eventNode = XmlCtrl.SelectSingleNode("/Events/Event[RemindDate='" & Date.Now.ToShortDateString & "'][Reminder='True'][RemindTime='" & Date.Now.Hour.ToString & ":" & Date.Now.Minute.ToString & "'][RemindAMPM='" & Date.Now.ToString("tt") & "']")
-            If Not eventNode Is Nothing Then
+            XmlCtrl.Load(EventXML)
+            Dim eventNode As XmlNode = XmlCtrl.SelectSingleNode("/Events/Event[RemindDate='" & Date.Now.ToShortDateString & "'][RemindAMPM='" & Date.Now.ToString("tt") & "'][Reminder='True']")
+
+            If Not eventNode Is Nothing AndAlso IsRemindHour(eventNode("RemindTime").InnerText) Then
                 Dim Rnd As New Random
 
                 Select Case Rnd.Next(1, 5)
@@ -2165,9 +2168,31 @@ Public Class Form1
                         Exit Select
                 End Select
 
+                eventNode("Reminder").InnerText = False
+                XmlCtrl.Save(EventXML)
+
                 Caine.Speak(eventNode("EventDesc").InnerText.ToString & " is scheduled for, or due on " & eventNode("EventDate").InnerText & " at " & eventNode("EventTime").InnerText & " " & eventNode("EventAMPM").InnerText & ".")
                 MessageBox.Show("Hey, " & My.Settings.Name & ", it's " & Date.Now.ToShortTimeString() & ". You asked me to remind you about '" & eventNode("EventDesc").InnerText & "'", "BonziBUDDY")
             End If
         End If
     End Sub
+
+    Private Function IsRemindHour(ByVal RemindTime As String)
+        Try
+            Dim CurrentHour As Integer = Date.Now.Hour
+            If CurrentHour > 12 Then
+                CurrentHour = CurrentHour - 12
+            ElseIf CurrentHour < 1 Then
+                CurrentHour = 12
+            End If
+
+            If Convert.ToInt16(RemindTime.Substring(0, RemindTime.Length - 3)) <= CurrentHour AndAlso Convert.ToInt16(RemindTime.Substring(RemindTime.Length - 2, 2)) <= Date.Now.Minute Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            Return False
+        End Try
+    End Function
 End Class

@@ -157,9 +157,10 @@ Partial Class ApplyForm
         '
         'Panel1
         '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Location = New System.Drawing.Point(6, 227)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(199, 2)
+        Me.Panel1.Size = New System.Drawing.Size(199, 5)
         Me.Panel1.TabIndex = 17
         '
         'CheckBox1

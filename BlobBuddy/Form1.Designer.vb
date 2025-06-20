@@ -189,7 +189,7 @@ Partial Class Form1
         Me.BuildNumber.Name = "BuildNumber"
         Me.BuildNumber.Size = New System.Drawing.Size(63, 13)
         Me.BuildNumber.TabIndex = 21
-        Me.BuildNumber.Text = "Build 25141"
+        Me.BuildNumber.Text = "Build 25012"
         '
         'CurrentDate
         '

@@ -51,7 +51,7 @@ Partial Class AboutBoxNew
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(139, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Version 2.2.0"
+        Me.Label1.Text = "Version 2.2.1"
         '
         'LinkLabel1
         '
@@ -155,7 +155,7 @@ Partial Class AboutBoxNew
         Me.Button17.BackColor = System.Drawing.SystemColors.Control
         Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button17.Location = New System.Drawing.Point(321, 377)
+        Me.Button17.Location = New System.Drawing.Point(321, 375)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(80, 23)
         Me.Button17.TabIndex = 19

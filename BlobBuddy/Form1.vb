@@ -630,8 +630,8 @@ Public Class Form1
     End Sub
 
     Private Sub ComputerUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComputerUpdate.Click
-        Caine.Speak("Your current version is 2.0! Let's launch my web page to see if there's an update...")
-        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.0.0"
+        Caine.Speak("Your current version is 2.2.1! Let's launch my web page to see if there's an update...")
+        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.2.1"
         Process.Start(webAddress)
     End Sub
 
@@ -1440,8 +1440,8 @@ Public Class Form1
     End Sub
 
     Private Sub JungleUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles JungleUpdate.Click
-        Caine.Speak("Your current version is 2.0! Let's launch my web page to see if there's an update...")
-        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.0.0"
+        Caine.Speak("Your current version is 2.2.1! Let's launch my web page to see if there's an update...")
+        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.2.1"
         Process.Start(webAddress)
     End Sub
 

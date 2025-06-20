@@ -2179,14 +2179,7 @@ Public Class Form1
 
     Private Function IsRemindHour(ByVal RemindTime As String)
         Try
-            Dim CurrentHour As Integer = Date.Now.Hour
-            If CurrentHour > 12 Then
-                CurrentHour = CurrentHour - 12
-            ElseIf CurrentHour < 1 Then
-                CurrentHour = 12
-            End If
-
-            If Convert.ToInt16(RemindTime.Substring(0, RemindTime.Length - 3)) <= CurrentHour AndAlso Convert.ToInt16(RemindTime.Substring(RemindTime.Length - 2, 2)) <= Date.Now.Minute Then
+            If Convert.ToDateTime(RemindTime & DateTime.Now.ToString("tt")) <= DateTime.Now Then
                 Return True
             Else
                 Return False

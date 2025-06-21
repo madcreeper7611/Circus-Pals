@@ -2172,7 +2172,7 @@ Public Class Form1
                 XmlCtrl.Save(EventXML)
 
                 Caine.Speak(eventNode("EventDesc").InnerText.ToString & " is scheduled for, or due on " & eventNode("EventDate").InnerText & " at " & eventNode("EventTime").InnerText & " " & eventNode("EventAMPM").InnerText & ".")
-                MessageBox.Show("Hey, " & My.Settings.Name & ", it's " & Date.Now.ToShortTimeString() & ". You asked me to remind you about '" & eventNode("EventDesc").InnerText & "'", "BonziBUDDY")
+                MessageBox.Show("Hey, " & My.Settings.Name & ", it's " & Date.Now.ToShortTimeString() & ". You asked me to remind you about '" & eventNode("EventDesc").InnerText & "'", "Circus Pals")
             End If
         End If
     End Sub

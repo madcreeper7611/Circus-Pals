@@ -226,7 +226,7 @@ Public Class NameForm
             Form1.Caine.Play("Blink")
             Form1.Caine.Speak("\Chr=""Normal""\\Vol=65535\Alright, back to my regular script!")
         End If
-        If My.Settings.Name.Contains("Kinito") Or My.Settings.Name.Contains("kinito") Or My.Settings.Name.Contains("KinitoPET") Or My.Settings.Name.Contains("kinitopet") Then
+        If My.Settings.Name.Contains("Kinito") Or My.Settings.Name.Contains("kinito") Or My.Settings.Name.Contains("KinitoPET") Or My.Settings.Name.Contains("kinitooet") Then
             Form1.Caine.Play("Alert")
             Form1.Caine.Speak("\Vol=65535\" + My.Settings.Name + "?")
             Form1.Caine.Play("Mad")

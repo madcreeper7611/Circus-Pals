@@ -134,7 +134,7 @@ Public Class ApplyForm
                 Dim xmlDoc = New XmlDocument()
                 xmlDoc.Load(EventXML)
                 Dim selectedTime = selectedItem.SubItems(0).Text
-                Dim eventNode = xmlDoc.SelectSingleNode("Events/Event[EventDate='" & SelectedDate.ToShortDateString() & "'][EventTime='" & selectedTime.Substring(0, selectedTime.Length - 3) & "'][EventAMPM='" & selectedTime.Substring(selectedTime.Length - 2) & "'][EventDesc='" & selectedItem.SubItems(1).Text & "']")
+                Dim eventNode = xmlDoc.SelectSingleNode("Events/Event[EventDate='" & SelectedDate.ToShortDateString() & "'][EventTime='" & selectedTime.Substring(0, selectedTime.Length - 3) & "'][EventAMPM='" & selectedTime.Substring(selectedTime.Length - 2) & "']")
 
                 If TypeOf eventNode Is Object Then
                     eventNode.ParentNode.RemoveChild(eventNode)

@@ -1,0 +1,12 @@
+// BonziRW, Version=2.0.0.1224, Culture=neutral, PublicKeyToken=null
+// BonziBUDDYRW.Properties.Resources
+using System.Drawing;
+
+internal static Bitmap msh
+{
+	get
+	{
+		object @object = ResourceManager.GetObject("msh", resourceCulture);
+		return (Bitmap)@object;
+	}
+}

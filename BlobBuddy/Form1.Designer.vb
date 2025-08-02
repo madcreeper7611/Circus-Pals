@@ -120,6 +120,9 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label
         Me.PictureBox6 = New System.Windows.Forms.PictureBox
         Me.EventTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.GameMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.CircusMasterTicTacToe = New System.Windows.Forms.ToolStripMenuItem
+        Me.ContestantMatchingGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -150,6 +153,7 @@ Partial Class Form1
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UtilPanel2.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GameMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -364,11 +368,11 @@ Partial Class Form1
         Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(223, 208)
+        Me.Label24.Location = New System.Drawing.Point(212, 208)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(46, 13)
+        Me.Label24.Size = New System.Drawing.Size(67, 13)
         Me.Label24.TabIndex = 25
-        Me.Label24.Text = "Installed"
+        Me.Label24.Text = "25 - Installed"
         '
         'Label25
         '
@@ -494,7 +498,7 @@ Partial Class Form1
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(61, 13)
         Me.Label12.TabIndex = 7
-        Me.Label12.Text = "1 - Installed"
+        Me.Label12.Text = "2 - Installed"
         '
         'Label10
         '
@@ -502,7 +506,7 @@ Partial Class Form1
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(32, 99)
+        Me.Label10.Location = New System.Drawing.Point(33, 94)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(46, 13)
         Me.Label10.TabIndex = 6
@@ -524,7 +528,7 @@ Partial Class Form1
         Me.SpeakText.AutoSize = True
         Me.SpeakText.BackColor = System.Drawing.Color.Transparent
         Me.SpeakText.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.SpeakText.Location = New System.Drawing.Point(36, 84)
+        Me.SpeakText.Location = New System.Drawing.Point(33, 81)
         Me.SpeakText.Name = "SpeakText"
         Me.SpeakText.Size = New System.Drawing.Size(47, 13)
         Me.SpeakText.TabIndex = 3
@@ -706,11 +710,12 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.CircusPals.My.Resources.Resources.CaineShare
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Location = New System.Drawing.Point(165, 115)
+        Me.PictureBox1.Location = New System.Drawing.Point(165, 118)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(49, 78)
+        Me.PictureBox1.Size = New System.Drawing.Size(47, 72)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
@@ -1231,6 +1236,25 @@ Partial Class Form1
         'EventTimer
         '
         '
+        'GameMenu
+        '
+        Me.GameMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CircusMasterTicTacToe, Me.ContestantMatchingGameToolStripMenuItem})
+        Me.GameMenu.Name = "GameMenu"
+        Me.GameMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.GameMenu.Size = New System.Drawing.Size(221, 48)
+        '
+        'CircusMasterTicTacToe
+        '
+        Me.CircusMasterTicTacToe.Name = "CircusMasterTicTacToe"
+        Me.CircusMasterTicTacToe.Size = New System.Drawing.Size(212, 22)
+        Me.CircusMasterTicTacToe.Text = "Circus Master Tic-Tac-Toe"
+        '
+        'ContestantMatchingGameToolStripMenuItem
+        '
+        Me.ContestantMatchingGameToolStripMenuItem.Name = "ContestantMatchingGameToolStripMenuItem"
+        Me.ContestantMatchingGameToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ContestantMatchingGameToolStripMenuItem.Text = "Contestant Matching Game"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1302,6 +1326,7 @@ Partial Class Form1
         Me.UtilPanel2.ResumeLayout(False)
         Me.UtilPanel2.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GameMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1405,5 +1430,8 @@ Partial Class Form1
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents EventTimer As System.Windows.Forms.Timer
+    Friend WithEvents GameMenu As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents CircusMasterTicTacToe As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ContestantMatchingGameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

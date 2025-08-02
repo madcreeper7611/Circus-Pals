@@ -663,7 +663,7 @@ Public Class Form1
         End If
         If URLTextBox.Text = "http://youtube.com" OrElse URLTextBox.Text = "https://youtube.com" Then
             Caine.Play("Alert")
-            Caine.Speak("Becareful! This site contains a \emp\lot of Content Farms!")
+            Caine.Speak("Be careful! This site contains a \emp\lot of Content Farms!")
             Caine.Play("RestPose")
         End If
         If URLTextBox.Text = "http://bitview.com" OrElse URLTextBox.Text = "http://bitview.com" Then
@@ -684,7 +684,7 @@ Public Class Form1
         If URLTextBox.Text = "http://reddit.com" OrElse URLTextBox.Text = "https://reddit.com" Then
             Caine.Speak("Sure, I guess i'll do it.")
         End If
-        If URLTextBox.Text = "http://Caine.link" OrElse URLTextBox.Text = "https://Caine.link" Then
+        If URLTextBox.Text = "http://bonzi.link" OrElse URLTextBox.Text = "https://bonzi.link" Then
             Caine.Play("Surprised")
             Caine.Speak("What are you doing!? This is too dangerous!")
         End If
@@ -699,7 +699,7 @@ Public Class Form1
         End If
         If URLTextBox.Text = "http://discord.com" OrElse URLTextBox.Text = "https://discord.com" Then
             Caine.Play("Alert")
-            Caine.Speak("Becareful! There is some crazy stuff on this website!")
+            Caine.Speak("Be careful! There is some crazy stuff on this website!")
             Caine.Play("RestPose")
         End If
         If URLTextBox.Text = "http://laserboy.neocities.org" OrElse URLTextBox.Text = "http://laserboy.neocities.org" Then

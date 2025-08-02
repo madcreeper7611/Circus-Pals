@@ -85,6 +85,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ApplyForm.Designer.vb">
+      <DependentUpon>ApplyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BlobSingsForm.designer.vb">
       <DependentUpon>BlobSingsForm.vb</DependentUpon>
     </Compile>
@@ -131,7 +137,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Settings.vb" />
     <Compile Include="SplashScreen1.Designer.vb">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
     </Compile>
@@ -148,6 +153,10 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutBoxNew.resx">
       <DependentUpon>AboutBoxNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyForm.resx">
+      <DependentUpon>ApplyForm.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="BlobSingsForm.resx">
@@ -241,11 +250,11 @@
     <None Include="Resources\agent_icon.gif" />
     <None Include="Resources\CaineShare.png" />
     <None Include="Resources\circuspals_games.wav" />
+    <None Include="Resources\calendar.png" />
     <Content Include="Resources\circus_pals_logo.gif" />
     <None Include="Resources\dragonbutton.png" />
     <None Include="Resources\PomniBackground.bmp" />
     <None Include="Resources\msagent_error.wav" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="Resources\SingOff.png" />
     <None Include="Resources\SingOn.png" />
     <None Include="Resources\jordon_button.png" />

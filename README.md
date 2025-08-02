@@ -8,7 +8,7 @@ Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Pleas
 
 # Features
 * The Cicrus Pals program based on a recreation of the original MaxALERT program by Konnor88
-* Compatibility with Windows 95 or later (View dotnet9x for more info)
+* Compatibility with Windows 98 or later
 * Everyone's favorite ringmaster, Caine!
 
 # License

@@ -12,7 +12,7 @@ Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Pleas
 * Everyone's favorite ringmaster, Caine!
 
 # License
-This source code is licensed under the Mozilla Public License 2.0. By using this source code, you accept all conditions of the MPL 2.0 license agreement, including code attribution and all the other legal stuff inside of it that would take to long to list individually.
+This source code is licensed under the [Mozilla Public License 2.0](https://github.com/Konnor88/maxalert-rewritten/blob/master/LICENSE). By using this source code, you accept all conditions of the MPL 2.0 license agreement, including code attribution and all the other legal stuff inside of it that would take to long to list individually.
 
 ==Compile Instructions== NOTE: I recommend you use Visual Studio 2008, as that it is what I use to develop.
 

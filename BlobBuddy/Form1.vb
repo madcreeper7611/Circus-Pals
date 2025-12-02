@@ -55,7 +55,6 @@ Public Class Form1
         If My.Settings.Theme = 1 Then
             Me.Label2.Show()
             Me.WackyWatch.Show()
-            Me.ComputerUpdate.Hide()
             Me.JungleUpdate.Show()
             Me.BackgroundImage = My.Resources.PomniBackground
             Me.ComputerBackgroundOptimizer.Show()
@@ -64,7 +63,6 @@ Public Class Form1
         If My.Settings.Theme = 2 Then
             Me.WackyWatch.Show()
             Me.JungleUpdate.Show()
-            Me.ComputerUpdate.Hide()
             Me.BackgroundImage = My.Resources.CircusBackground
             Me.ComputerBackgroundOptimizer.Hide()
             Me.JungleBGModule.Show()
@@ -295,6 +293,9 @@ Public Class Form1
             Case 3
                 Caine.Play("Alert")
                 Caine.Speak("It's always nice to visit our home!")
+            Case 4
+                Caine.Play("Alert")
+                Caine.Speak("Home is where the heart is!")
         End Select
         Process.Start(webAddress)
     End Sub
@@ -629,9 +630,9 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub ComputerUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComputerUpdate.Click
-        Caine.Speak("Your current version is 2.2.1! Let's launch my web page to see if there's an update...")
-        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.2.1"
+    Private Sub ComputerUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Caine.Speak("Your current version is 3.0! Let's launch my web page to see if there's an update...")
+        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=3.0.0"
         Process.Start(webAddress)
     End Sub
 
@@ -750,7 +751,9 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox13.Click
-        GamesWindow.Show()
+        Caine.Play("Uncertain")
+        Caine.Speak("\Vol=65535\Sorry, but the games are unavailable at the moment.")
+        Caine.Play("Blink")
     End Sub
 
 
@@ -1440,8 +1443,8 @@ Public Class Form1
     End Sub
 
     Private Sub JungleUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles JungleUpdate.Click
-        Caine.Speak("Your current version is 2.2.1! Let's launch my web page to see if there's an update...")
-        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=2.2.1"
+        Caine.Speak("Your current version is 3.0! Let's launch my web page to see if there's an update...")
+        Dim webAddress As String = "http://circuspals.w10.site/update.html?version=3.0.0"
         Process.Start(webAddress)
     End Sub
 

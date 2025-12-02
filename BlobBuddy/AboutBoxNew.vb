@@ -11,17 +11,12 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim webAddress As String = "https://laserboy.neocities.org/"
+        Dim webAddress As String = "https://laserboy.nekoweb.org/"
         Process.Start(webAddress)
     End Sub
 
     Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
         Dim webAddress As String = "https://www.tmafe.com/msagent"
-        Process.Start(webAddress)
-    End Sub
-
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
-        Dim webAddress As String = "https://www.tmafe.com/"
         Process.Start(webAddress)
     End Sub
 
@@ -34,13 +29,8 @@
         Me.Close()
     End Sub
 
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-        Dim webAddress As String = "https://www.youtube.com/@maddox5081/"
-        Process.Start(webAddress)
-    End Sub
-
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
-        Dim webAddress As String = "https://jordyporgie.neocities.org/"
+        Dim webAddress As String = "https://jordytheporgie.straw.page/"
         Process.Start(webAddress)
     End Sub
 End Class

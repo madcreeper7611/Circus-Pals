@@ -92,7 +92,6 @@ Partial Class Form1
         Me.JungleBGModule = New System.Windows.Forms.PictureBox
         Me.JungleUpdate = New System.Windows.Forms.PictureBox
         Me.ComputerBackgroundOptimizer = New System.Windows.Forms.PictureBox
-        Me.ComputerUpdate = New System.Windows.Forms.PictureBox
         Me.UtilPanel1 = New System.Windows.Forms.Panel
         Me.Button8 = New System.Windows.Forms.Button
         Me.Button14 = New System.Windows.Forms.Button
@@ -112,7 +111,6 @@ Partial Class Form1
         Me.Label21 = New System.Windows.Forms.Label
         Me.WackyWatch = New System.Windows.Forms.PictureBox
         Me.ReturnToSpot = New System.Windows.Forms.Timer(Me.components)
-        Me.AxAgent1 = New AxAgentObjects.AxAgent
         Me.UtilPanel2 = New System.Windows.Forms.Panel
         Me.Button15 = New System.Windows.Forms.Button
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar
@@ -123,6 +121,7 @@ Partial Class Form1
         Me.GameMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.CircusMasterTicTacToe = New System.Windows.Forms.ToolStripMenuItem
         Me.ContestantMatchingGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AxAgent1 = New AxAgentObjects.AxAgent
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -146,14 +145,13 @@ Partial Class Form1
         CType(Me.JungleBGModule, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JungleUpdate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComputerBackgroundOptimizer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComputerUpdate, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UtilPanel1.SuspendLayout()
         Me.UtilPanel3.SuspendLayout()
         CType(Me.WackyWatch, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UtilPanel2.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GameMenu.SuspendLayout()
+        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -498,7 +496,7 @@ Partial Class Form1
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(61, 13)
         Me.Label12.TabIndex = 7
-        Me.Label12.Text = "2 - Installed"
+        Me.Label12.Text = "0 - Installed"
         '
         'Label10
         '
@@ -919,18 +917,6 @@ Partial Class Form1
         Me.ComputerBackgroundOptimizer.TabIndex = 29
         Me.ComputerBackgroundOptimizer.TabStop = False
         '
-        'ComputerUpdate
-        '
-        Me.ComputerUpdate.BackgroundImage = CType(resources.GetObject("ComputerUpdate.BackgroundImage"), System.Drawing.Image)
-        Me.ComputerUpdate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComputerUpdate.InitialImage = Nothing
-        Me.ComputerUpdate.Location = New System.Drawing.Point(451, 9)
-        Me.ComputerUpdate.Name = "ComputerUpdate"
-        Me.ComputerUpdate.Size = New System.Drawing.Size(172, 48)
-        Me.ComputerUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ComputerUpdate.TabIndex = 27
-        Me.ComputerUpdate.TabStop = False
-        '
         'UtilPanel1
         '
         Me.UtilPanel1.BackColor = System.Drawing.Color.Red
@@ -1154,15 +1140,6 @@ Partial Class Form1
         '
         Me.ReturnToSpot.Interval = 1
         '
-        'AxAgent1
-        '
-        Me.AxAgent1.Enabled = True
-        Me.AxAgent1.Location = New System.Drawing.Point(0, 0)
-        Me.AxAgent1.Name = "AxAgent1"
-        Me.AxAgent1.OcxState = CType(resources.GetObject("AxAgent1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxAgent1.Size = New System.Drawing.Size(19, 32)
-        Me.AxAgent1.TabIndex = 0
-        '
         'UtilPanel2
         '
         Me.UtilPanel2.BackColor = System.Drawing.Color.Red
@@ -1246,7 +1223,7 @@ Partial Class Form1
         'CircusMasterTicTacToe
         '
         Me.CircusMasterTicTacToe.Name = "CircusMasterTicTacToe"
-        Me.CircusMasterTicTacToe.Size = New System.Drawing.Size(212, 22)
+        Me.CircusMasterTicTacToe.Size = New System.Drawing.Size(220, 22)
         Me.CircusMasterTicTacToe.Text = "Circus Master Tic-Tac-Toe"
         '
         'ContestantMatchingGameToolStripMenuItem
@@ -1254,6 +1231,15 @@ Partial Class Form1
         Me.ContestantMatchingGameToolStripMenuItem.Name = "ContestantMatchingGameToolStripMenuItem"
         Me.ContestantMatchingGameToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
         Me.ContestantMatchingGameToolStripMenuItem.Text = "Contestant Matching Game"
+        '
+        'AxAgent1
+        '
+        Me.AxAgent1.Enabled = True
+        Me.AxAgent1.Location = New System.Drawing.Point(0, 0)
+        Me.AxAgent1.Name = "AxAgent1"
+        Me.AxAgent1.OcxState = CType(resources.GetObject("AxAgent1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxAgent1.Size = New System.Drawing.Size(32, 32)
+        Me.AxAgent1.TabIndex = 0
         '
         'Form1
         '
@@ -1280,7 +1266,6 @@ Partial Class Form1
         Me.Controls.Add(Me.AxAgent1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.WackyWatch)
-        Me.Controls.Add(Me.ComputerUpdate)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(640, 400)
@@ -1316,17 +1301,16 @@ Partial Class Form1
         CType(Me.JungleBGModule, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JungleUpdate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComputerBackgroundOptimizer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComputerUpdate, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UtilPanel1.ResumeLayout(False)
         Me.UtilPanel1.PerformLayout()
         Me.UtilPanel3.ResumeLayout(False)
         Me.UtilPanel3.PerformLayout()
         CType(Me.WackyWatch, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UtilPanel2.ResumeLayout(False)
         Me.UtilPanel2.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GameMenu.ResumeLayout(False)
+        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1356,7 +1340,6 @@ Partial Class Form1
     Friend WithEvents Timer3 As System.Windows.Forms.Timer
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents Timer4 As System.Windows.Forms.Timer
-    Friend WithEvents ComputerUpdate As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ComputerBackgroundOptimizer As System.Windows.Forms.PictureBox
     Friend WithEvents JungleUpdate As System.Windows.Forms.PictureBox

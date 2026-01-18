@@ -12,9 +12,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Circus Pals")> 
 <Assembly: AssemblyDescription("Your desktop circus assistant!")> 
-<Assembly: AssemblyCompany("Laser Boy Studios")> 
+<Assembly: AssemblyCompany("JordyPorgie and TMAFE")> 
 <Assembly: AssemblyProduct("Circus Pals")> 
-<Assembly: AssemblyCopyright("Copyright © Laser Boy Studios 2024-2025")> 
+<Assembly: AssemblyCopyright("Copyright © JordyPorgie and TMAFE 2024-2026")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("3.0.0.25120")> 
-<Assembly: AssemblyFileVersion("3.0.0.25120")> 
+<Assembly: AssemblyVersion("3.0.*")> 
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 
+

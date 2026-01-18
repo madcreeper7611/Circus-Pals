@@ -29,12 +29,12 @@ Partial Class AboutBoxNew
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.PictureBox5 = New System.Windows.Forms.PictureBox
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.Button17 = New System.Windows.Forms.Button
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,19 +47,19 @@ Partial Class AboutBoxNew
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(139, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Version 3.0.0"
+        Me.Label1.Text = "Version 3.0.1"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(252, 246)
+        Me.LinkLabel1.Location = New System.Drawing.Point(273, 246)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(211, 20)
+        Me.LinkLabel1.Size = New System.Drawing.Size(169, 20)
         Me.LinkLabel1.TabIndex = 2
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "https://laserboy.nekoweb.org"
+        Me.LinkLabel1.Text = "https://www.tmafe.com"
         '
         'Label2
         '
@@ -91,11 +91,11 @@ Partial Class AboutBoxNew
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(191, 351)
+        Me.Label4.Location = New System.Drawing.Point(141, 351)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(347, 20)
+        Me.Label4.Size = New System.Drawing.Size(460, 20)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Laser Boy is not affiliated with these companies."
+        Me.Label4.Text = "TMAFE and JordyPorgie are not affiliated with these companies."
         '
         'PictureBox5
         '
@@ -108,18 +108,6 @@ Partial Class AboutBoxNew
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox5.TabIndex = 23
         Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(316, 294)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(88, 31)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox4.TabIndex = 22
-        Me.PictureBox4.TabStop = False
         '
         'PictureBox2
         '
@@ -145,6 +133,18 @@ Partial Class AboutBoxNew
         Me.Button17.Text = "OK"
         Me.Button17.UseVisualStyleBackColor = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(316, 294)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(88, 31)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox4.TabIndex = 22
+        Me.PictureBox4.TabStop = False
+        '
         'AboutBoxNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -152,7 +152,7 @@ Partial Class AboutBoxNew
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BackgroundImage = Global.CircusPals.My.Resources.Resources.AboutBanner
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(733, 403)
+        Me.ClientSize = New System.Drawing.Size(733, 400)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox2)
@@ -172,8 +172,8 @@ Partial Class AboutBoxNew
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About Circus Pals"
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -185,6 +185,6 @@ Partial Class AboutBoxNew
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button17 As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

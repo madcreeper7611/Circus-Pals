@@ -255,7 +255,6 @@
     <None Include="Resources\game_candy.gif" />
     <None Include="Resources\game_gloinks.gif" />
     <None Include="Resources\GameScreen.png" />
-    <None Include="Resources\lazer98.gif" />
     <None Include="Resources\AboutBanner.png" />
     <None Include="Resources\CircusBit.bmp" />
     <None Include="Resources\Speak1.png" />

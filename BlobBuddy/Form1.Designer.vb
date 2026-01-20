@@ -84,7 +84,6 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button
         Me.Label2 = New System.Windows.Forms.Label
         Me.RandomSpeechTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.TimerOfDOOM = New System.Windows.Forms.Timer(Me.components)
         Me.SingTimer = New System.Windows.Forms.Timer(Me.components)
         Me.MashButton = New System.Windows.Forms.PictureBox
         Me.JungleUpdate = New System.Windows.Forms.PictureBox
@@ -856,9 +855,6 @@ Partial Class Form1
         '
         Me.RandomSpeechTimer.Interval = 120000
         '
-        'TimerOfDOOM
-        '
-        '
         'MashButton
         '
         Me.MashButton.BackColor = System.Drawing.Color.Transparent
@@ -1327,7 +1323,6 @@ Partial Class Form1
     Friend WithEvents UtilPanel3 As System.Windows.Forms.Panel
     Friend WithEvents WackyWatch As System.Windows.Forms.PictureBox
     Friend WithEvents ExitToolStripMenu As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents TimerOfDOOM As System.Windows.Forms.Timer
     Friend WithEvents SingTimer As System.Windows.Forms.Timer
     Friend WithEvents MashButton As System.Windows.Forms.PictureBox
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

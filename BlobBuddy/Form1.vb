@@ -1,5 +1,3 @@
-Option Explicit On
-
 Imports System
 Imports AgentObjects
 Imports AxAgentObjects
@@ -25,6 +23,7 @@ Public Class Form1
     Public WithEvents AgentControl As Agent
     Dim WelcomeRequest As IAgentCtlRequest
     Dim LeaveRequest As IAgentCtlRequest
+    Public DoomRequest As IAgentCtlRequest
 
     Private Sub NotifyIcon_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.Show()
@@ -1531,12 +1530,6 @@ Public Class Form1
         LeaveRequest = Caine.Hide()
     End Sub
 
-    Private Sub TimerOfDOOM_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles TimerOfDOOM.Tick
-        Dim webAddress As String = "http://www.youtube.com/watch?v=YRl0o0e2OYM"
-        Process.Start(webAddress)
-        TimerOfDOOM.Stop()
-    End Sub
-
     Private Sub SongButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SongButton.Click
         BlobSingsForm.Show()
     End Sub
@@ -2175,6 +2168,13 @@ Public Class Form1
             Return False
         End Try
     End Function
+
+
+    Private Sub AxAgent1_RequestStart(ByVal sender As System.Object, ByVal e As AxAgentObjects._AgentEvents_RequestStartEvent) Handles AxAgent1.RequestStart
+        If e.request Is DoomRequest Then
+            Process.Start("http://www.youtube.com/watch?v=YRl0o0e2OYM")
+        End If
+    End Sub
 
     Private Sub AxAgent1_RequestComplete(ByVal sender As System.Object, ByVal e As AxAgentObjects._AgentEvents_RequestCompleteEvent) Handles AxAgent1.RequestComplete
         If e.request Is WelcomeRequest Then

@@ -296,7 +296,7 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
-        HandlePictureBox4ClickEvent()
+        TellJoke()
     End Sub
 
 
@@ -332,8 +332,7 @@ Public Class Form1
 
 
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
-        HandlePictureBox5ClickEvent()
-
+        TellFact()
     End Sub
 
     Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
@@ -1030,10 +1029,10 @@ Public Class Form1
                 Caine.MoveTo(320, 240)
                 Exit Select
             Case 20
-                HandlePictureBox4ClickEvent()
+                TellJoke()
                 Exit Select
             Case 21
-                HandlePictureBox5ClickEvent()
+                TellFact()
                 Exit Select
             Case 22
                 SingIntro()
@@ -1041,212 +1040,231 @@ Public Class Form1
                 Exit Select
         End Select
     End Sub
-    Private Sub HandlePictureBox4ClickEvent()
-        Dim random2 As New Random()
-        Dim randomNumber As Integer = random2.Next(1, 33)
+    Private Sub TellJoke()
+        Dim Rnd As New Random() 
 
-        Select Case randomNumber
+        Select Case Rnd.Next(1, 26)
             Case 1
-                Caine.Play("Acknowledge")
+                Caine.Play("Alert")
                 Caine.Speak("A joke? Sure, why not?")
+            Case 2
+                Caine.Play("Alert")
+                Caine.Speak("Okay, if you're sure.")
+            Case 3
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Sure, I've got a funny one.")
+            Case 4
+                Caine.Play("Alert")
+                Caine.Speak("If you insist.")
+            Case 5
+                Caine.Play("Alert")
+                Caine.Speak(My.Settings.Name & "? I didn't know you liked my jokes so much.")
+            Case 6
+                Caine.Play("Alert")
+                Caine.Speak("Alright, here we go.")
+            Case 7
+                Caine.Play("Alert")
+                Caine.Speak("Ok, " & My.Settings.Name & ", this one's sure to make you laugh!")
+            Case 8
+                Caine.Play("Announce")
+                Caine.Speak("You asked for it, you got it!")
+            Case 9
+                Caine.Play("Alert")
+                Caine.Speak("Ok, if you're sure.")
+            Case 10
+                Caine.Play("Alert")
+                Caine.Speak("OK, here goes.")
+            Case 11
+                Caine.Play("Pleased")
+                Caine.Speak("I've been waiting to do this one, " & My.Settings.Name & "!")
+            Case 12
+                Caine.Play("Surprised")
+                Caine.Speak("I didn't think you liked my jokes \emp\ this much, " & My.Settings.Name & "!")
+            Case 13
+                Caine.Play("Acknowledge")
+                Caine.Speak("Let's go!")
+            Case 14
+                Caine.Play("Alert")
+                Caine.Speak("Okay, " & My.Settings.Name & ", I've got one.")
+            Case 15
+                Caine.Play("Alert")
+                Caine.Speak("Anything for you, " & My.Settings.Name & "!")
+            Case 16
+                Caine.Play("Alert")
+                Caine.Speak("This one's sure to make you laugh!")
+            Case 17
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Sure, I got a ton of them.")
+            Case 18
+                Caine.Play("Alert")
+                Caine.Speak("Sure thing, " & My.Settings.Name & ".")
+            Case 19
+                Caine.Play("Alert")
+                Caine.Speak("OK, I've got a good one for you.")
+            Case 20
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Sure thing, " & My.Settings.Name & "!")
+            Case 21
+                Caine.Play("Alert")
+                Caine.Speak("OK, " & My.Settings.Name & ", I've got one for you.")
+            Case 22
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Sure thing!")
+            Case 23
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Why not!")
+            Case 24
+                Caine.Play("Alert")
+                Caine.Speak("A joke? Okie-Dokie!")
+            Case 25
+                Caine.Play("Alert")
+                Caine.Speak(My.Settings.Name & ", Stop! I got a very funny \emp\joke for you!")
+        End Select
+
+        Select Case Rnd.Next(1, 33)
+            Case 1
                 Caine.Play("Explain")
                 Caine.Speak("Did you hear about the human cannonball? \pau=2000\He got fired!")
                 Caine.Play("Giggle")
                 Caine.Speak("Get it, because he was blasted out of a cannon?")
             Case 2
-                Caine.Play("Acknowledge")
-                Caine.Speak("Okay, if you're sure.")
                 Caine.Play("Explain")
                 Caine.Speak("Why did the clown throw his clock out of the window? \pau=2000\He wanted to see time fly!")
                 Caine.Play("Giggle")
                 Caine.Play("Pleased")
                 Caine.Speak("It took me a while to get that one, but when I did I could not stop laughing!")
             Case 3
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Sure, I've got a funny one.")
                 Caine.Play("Explain")
                 Caine.Speak("What happened when the magician got mad? \pau=2000\He pulled his \emp\ hare out!")
                 Caine.Play("Giggle")
                 Caine.Speak("First time I heard that, I nearly fell off my chair laughing!")
             Case 4
-                Caine.Play("Acknowledge")
-                Caine.Speak("If you insist.")
                 Caine.Play("Explain")
                 Caine.Speak("Why don't some fishes go to school? \pau=2000\Because they don't give a \emp\carp about it!")
                 Caine.Play("Giggle")
                 Caine.Speak("I learned that from the french!")
             Case 5
-                Caine.Play("Alert")
-                Caine.Speak(My.Settings.Name + "? I didn't know you liked my jokes so much.")
                 Caine.Play("Explain")
                 Caine.Speak("How do you raise a baby elephant? \pau=2000\With a fork lift!")
                 Caine.Play("Congratulate2")
                 Caine.Speak("Well, of \emp\ course I'm fork lift certified.")
             Case 6
-                Caine.Play("Acknowledge")
-                Caine.Speak("Alright, here we go.")
                 Caine.Play("Explain")
                 Caine.Speak("What do you and a lemon have in common? \pau=2000\You're both sour!")
                 Caine.Play("Uncertain")
                 Caine.Speak("Some of these jokes were written by Jax. Blame him.")
             Case 7
-                Caine.Play("Acknowledge")
-                Caine.Speak("Ok, " + My.Settings.Name + ", this one's sure to make you laugh!")
                 Caine.Play("Explain")
                 Caine.Speak("Where should a monkey go when he loses his tail? \pau=2000\To a retailer!")
                 Caine.Play("Giggle")
                 Caine.Play("Think")
                 Caine.Speak("Come to think of it, does Son \Map=""Go-koo""=""Goku""\ count as one?")
             Case 8
-                Caine.Play("Announce")
-                Caine.Speak("You asked for it, you got it!")
                 Caine.Play("Explain")
                 Caine.Speak("Why is Merlin a wizard? \pau=2000\Because he sucks at everything else!")
                 Caine.Play("Mad")
                 Caine.Speak("Jax wrote that one. Send all complaints to him.")
             Case 9
-                Caine.Play("Acknowledge")
-                Caine.Speak("This one's for all of you un-abstracted humans out there!")
                 Caine.Play("Explain")
                 Caine.Speak("What does an abstraction feel like? \pau=2000\Darkness consuming you!")
                 Caine.Play("Giggle")
                 Caine.Speak("There's a problem I \emp\ know I can handle!")
             Case 10
-                Caine.Play("Acknowledge")
-                Caine.Speak("Ok, if you're sure.")
                 Caine.Play("Explain")
                 Caine.Speak("Why does Gangle wear a comedy mask? \pau=2000\To hide his miserable life!")
                 Caine.Play("Uncertain")
                 Caine.Speak("That was one of Jax's jokes. Sorry.")
             Case 11
-                Caine.Play("Acknowledge")
-                Caine.Speak("Ok, here goes.")
                 Caine.Play("Explain")
                 Caine.Speak("A clown opened the door for me the other day. \pau=2000\It was a lovely jester!")
                 Caine.Play("Giggle")
                 Caine.Speak("I'm talking about Pomni, our \emp\ current member.")
             Case 12
-                Caine.Play("Pleased")
-                Caine.Speak("I've been waiting to do this one, " + My.Settings.Name + "!")
                 Caine.Play("Explain")
                 Caine.Speak("Why are my performers always stressed? \pau=2000\Because their job is in tents!")
                 Caine.Play("Restpose")
-                Caine.Speak("There's plenty more where \emp\ that came from, " + My.Settings.Name + "!")
+                Caine.Speak("There's plenty more where \emp\ that came from, " & My.Settings.Name & "!")
             Case 13
-                Caine.Play("Surprised")
-                Caine.Speak("I didn't think you liked my jokes \emp\ this much, " + My.Settings.Name + "!")
                 Caine.Play("Explain")
                 Caine.Speak("And what's the deal with keyboards? These aren't keys, I can't unlock \emp\ anything with this thing! I guess the \emp\ inventor of keyboards thought that they'd be the key to typing.")
                 Caine.Play("Giggle")
                 Caine.Speak("That was one of Max's jokes. Thank him for that!")
             Case 14
-                Caine.Play("Acknowledge")
-                Caine.Speak("Let's go!")
                 Caine.Play("Explain")
                 Caine.Speak("What do you call an escaped prisoner in the metaverse? \pau=2000\A Meta Runner!")
                 Caine.Play("Giggle")
                 Caine.Speak("Careful not to let him steal your bitcoins!")
             Case 15
-                Caine.Play("Acknowledge")
-                Caine.Speak("Okay, " + My.Settings.Name + ", I've got one.")
                 Caine.Play("Explain")
                 Caine.Speak("What do you call a group of small copters that deliver packages from the stores? \pau=2000\Worker Drones!")
                 Caine.Play("Giggle")
                 Caine.Speak("Get it, because these and the blue-eyed robots have the same name?")
             Case 16
-                Caine.Play("Acknowledge")
-                Caine.Speak("Anything for you, " + My.Settings.Name + "!")
                 Caine.Play("Explain")
                 Caine.Speak("Why couldn't the plush doll eat her dinner? \pau=2000\Because she's been stuffed for years!")
                 Caine.Play("Pleased")
                 Caine.Speak("I saved this joke for one of my human superstars!")
             Case 17
-                Caine.Play("Acknowledge")
-                Caine.Speak("This one's sure to make you laugh!")
                 Caine.Play("Explain")
                 Caine.Speak("What's the perfect detective for your computer? \pau=2000\Microsoft Agents!")
                 Caine.Play("Acknowledge")
                 Caine.Speak("Hey! I fall under that category!")
             Case 18
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Sure, I got a ton of them.")
                 Caine.Play("Explain")
                 Caine.Speak("What does a mix-and-match toy say to an adventure she doesn't feel like going on? \pau=2000\'Buzz off'!")
                 Caine.Play("Giggle")
                 Caine.Speak("That one's a classic, even when censored!")
             Case 19
-                Caine.Play("Acknowledge")
-                Caine.Speak("Sure thing, " + My.Settings.Name + ".")
                 Caine.Play("Explain")
                 Caine.Speak("What is Kinger's greatest fear? \pau=2000\The exit!")
                 Caine.Play("Uncertain")
                 Caine.Speak("That was another one of Jax's jokes. Sorry.")
             Case 20
-                Caine.Play("Acknowledge")
-                Caine.Speak("OK, I've got a good one for you.")
                 Caine.Play("Explain")
                 Caine.Speak("Knock knock! Who's there? Orange! Orange who? Orange you glad this is all a dream?")
                 Caine.Play("Uncertain")
                 Caine.Speak("That was once again a Jax joke, I'm sorry.")
             Case 21
-                Caine.Play("Acknowledge")
-                Caine.Speak("OK, here goes.")
                 Caine.Play("Explain")
                 Caine.Speak("What is the proper way to respond to a scary monster? \pau=2000\''Zoinks!''")
                 Caine.Play("Giggle")
                 Caine.Speak("That was one of Jax's jokes, and believe it or not, I actually kinda chuckled at that one!")
             Case 22
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Sure thing, " + My.Settings.Name + "!")
                 Caine.Play("Explain")
                 Caine.Speak("I saw the sun go down in the bright orange sky. \pau=2000\I considered it a Sunset Paradise!")
                 Caine.Play("Restpose")
                 Caine.Speak("So, you're saying Pomni sounds familiar?")
             Case 23
-                Caine.Play("Acknowledge")
-                Caine.Speak("Ok, " + My.Settings.Name + ", I've got one for you.")
                 Caine.Play("Explain")
                 Caine.Speak("How do you deal with an aligator? \pau=2000\Zap!")
                 Caine.Play("Giggle")
                 Caine.Speak("Hey, don't panic. It's not that NPC you're emotionally connected to.")
             Case 24
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Sure thing!")
                 Caine.Play("Explain")
                 Caine.Speak("Why couldn't the kid get into the pirate movie? \pau=2000\Because it was rated arr!")
                 Caine.Play("Giggle")
                 Caine.Speak("Get it, because it's about pirates?")
             Case 25
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Why not!")
                 Caine.Play("Explain")
                 Caine.Speak("What's the best way to troll a ragdoll? \pau=2000\Deliver centipedes!")
                 Caine.Play("Uncertain")
                 Caine.Speak("That was yet another Jax joke. I'm really sorry.")
             Case 26
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Okie-Dokie!")
                 Caine.Play("Explain")
                 Caine.Speak("What is the devil's greatest fear? \pau=2000\Angels!")
                 Caine.Play("Uncertain")
                 Caine.Speak("I tried my best on that one.")
             Case 27
-                Caine.Play("Alert")
-                Caine.Speak("" + My.Settings.Name + ", Stop! I got a very funny \emp\joke for you!")
                 Caine.Play("Explain")
                 Caine.Speak("What causes a massive demon hotel leak? \pau=2000\Nick the Marriage!")
                 Caine.Play("Giggle")
                 Caine.Speak("It's funny because it's true!")
             Case 28
-                Caine.Play("Acknowledge")
-                Caine.Speak("OK, here goes.")
                 Caine.Play("Explain")
                 Caine.Speak("Where should you go buy a propane tank? \pau=2000\at a Gaslight District!")
                 Caine.Play("Giggle")
                 Caine.Speak("Ah yes, the end times \emp\are near.")
             Case 29
-                Caine.Play("Acknowledge")
-                Caine.Speak("If you insist.")
                 Caine.Play("Explain")
                 Caine.Speak("What did the Spudsy's burger say to the other burger at the party? \pau=2000\'You're a bit saucy today, aren't you?'")
                 Caine.Play("Giggle")
@@ -1254,22 +1272,16 @@ Public Class Form1
                 Caine.Play("Sad")
                 Caine.Speak("Why aren't you laughing?")
             Case 30
-                Caine.Play("Announce")
-                Caine.Speak("You asked for it, you got it!")
                 Caine.Play("Explain")
                 Caine.Speak("What do you call a snowman eating french fries at Spudsy's? \pau=2000\A \Map=""chilly-dog!""=""chilli-dog!""\")
                 Caine.Play("Blink")
                 Caine.Speak("You know " + My.Settings.Name + ", a good friend always laughs at your jokes, even if they're bad.")
             Case 31
-                Caine.Play("Acknowledge")
-                Caine.Speak("OK, I've got a good one for you.")
                 Caine.Play("Explain")
                 Caine.Speak("What is Orbsman's least favorite shape? \pau=2000\Blocks!")
                 Caine.Play("Giggle")
                 Caine.Speak("Get it, because he's all but spheres?")
             Case 32
-                Caine.Play("Acknowledge")
-                Caine.Speak("A joke? Why not!")
                 Caine.Play("Explain")
                 Caine.Speak("What's the best antivirus for your computer? \pau=2000\The knights of Guinevere!")
                 Caine.Play("Giggle")
@@ -1278,50 +1290,68 @@ Public Class Form1
                 Caine.Speak("Why aren't you laughing?")
         End Select
     End Sub
-    Private Sub HandlePictureBox5ClickEvent()
-        Dim randomF As New Random()
-        Dim randomFact As Integer = randomF.Next(1, 28)
-        Dim randomE As New Random()
-        Dim randomEnd As Integer = randomE.Next(1, 16)
+    Private Sub TellFact()
+        Dim Rnd As New Random()
 
         Caine.Play("Read")
-        Select Case randomFact
+        Select Case Rnd.Next(1, 13)
             Case 1
-                Caine.Speak("Whoa, this is crazy! Did you know that Windows 2000 was never meant for consumers? The closest thing was Windows ME, which was more like a buggy Windows 98.")
+                Caine.Speak("Whoa, this is crazy!")
             Case 2
                 Caine.Speak("Here's some knowledge for you. ")
+            Case 3
+                Caine.Speak("Here's something that might interest you!")
+            Case 4
+                Caine.Speak("Here's a fun fact!")
+            Case 5
+                Caine.Speak("Here's an interesting one.")
+            Case 6
+                Caine.Speak("It's learning time!")
+            Case 7
+                Caine.Speak("Alrighty " & My.Settings.Name & ", here's a fact for you.")
+            Case 8
+                Caine.Speak("Well this is an interesting one, " & My.Settings.Name & "!")
+            Case 9
+                Caine.Speak("This one's sure to impress you as much as it impressed me!")
+            Case 10
+                Caine.Speak("It's time for an amazing fact!")
+            Case 11
+                Caine.Speak("It's \emp\fact time.")
+            Case 12
+                Caine.Speak("Here's some knowledge for you.")
+        End Select
+        Select Case Rnd.Next(1, 33)
+            Case 1
+                Caine.Speak("Did you know that Windows 2000 was never meant for consumers? The closest thing was Windows ME, which was more like a buggy Windows 98.")
+            Case 2
                 Caine.Speak("Did you know that the oldest versions of Windows were DOS based? It went on like this until NT for businesses, and XP for everyone else.")
             Case 3
                 Caine.Speak("Did you know that the first digital computer was invented in 1946?")
                 Caine.Speak("I wouldn't imagine they were able to do much back then.")
             Case 4
-                Caine.Speak("Here's something that might interest you! Did you know that in the 1980s, the Commodore 64 was the best selling computer of all time?")
+                Caine.Speak("Did you know that in the 1980s, the Commodore 64 was the best selling computer of all time?")
                 Caine.Speak("It makes sense, because not only are the games good, but Dang do those soundtracks slap!")
             Case 5
-                Caine.Speak("Here's a fun fact! Did you know that the computer mouse was named after its resemblance to the rodent of the same name? It's mostly in the wire, which looks like a tail.")
+                Caine.Speak("Did you know that the computer mouse was named after its resemblance to the rodent of the same name? It's mostly in the wire, which looks like a tail.")
             Case 6
                 Caine.Speak("Did you know that the first game console, the Brown Box, was made in 1967? It wasn't released publicly though. The first \emp\ publicly released game console, the Magnavox Odyssey, was released in 1972!")
                 Caine.Speak("Five years! That's a long gap!")
             Case 7
-                Caine.Speak("Here's an interesting one.")
                 Caine.Speak("Did you know that this layout used to be a custom skin for BlobBUDDY?")
                 Caine.Speak("Maybe I'm \emp\ related to that creature!")
             Case 8
                 Caine.Speak("Did you know that the USB was invented in 1996? That's an entire year after the release of Windows 95!")
             Case 9
-                Caine.Speak("It's learning time!")
                 Caine.Speak("Did you know that the first polygonal computer animation was in 1972? It featured a hand, a heart valve, and even a face!")
                 Caine.Speak("I even have said hand on my book!")
             Case 10
                 Caine.Speak("Did you know that Windows 1.0 wasn't publicly released? The first publicly released version was Windows 1.01.")
             Case 11
-                Caine.Speak("Well this is an interesting one, " + My.Settings.Name + "! Did you know that the invention of HDMI goes all the way back to 2002! Who knew that high definition existed for that long?")
+                Caine.Speak("Did you know that the invention of HDMI goes all the way back to 2002! Who knew that high definition existed for that long?")
             Case 12
-                Caine.Speak("Alrighty " + My.Settings.Name + ", heres a fact for you.")
                 Caine.Speak("Did you know that the Fairchild Channel F was the first game console to truly utilize game cartridges?")
                 Caine.Speak("\emp\Really makes you wonder if the Digital Circus runs through a floppy disk.")
             Case 13
-                Caine.Speak("Do you like playing games, " + My.Settings.Name + "? If so, this fact is all about such! ")
                 Caine.Speak("Did you know that the first arcade video game, Computer Space, was released in 1971?")
                 Caine.Speak("That's a year before the first game console for consumers, the Magnavox Odyssey!")
             Case 14
@@ -1333,7 +1363,6 @@ Public Class Form1
             Case 16
                 Caine.Speak("Did you know that Palm OS was introduced in 1996? That's \emp\ way before J2ME and Brew were introduced!")
             Case 17
-                Caine.Speak("This one's sure to impress you as much as it impressed me!")
                 Caine.Speak("Did you know that composite video was invented in 1954! Yes, you heard that right!")
                 Caine.Speak("And this whole time, I thought it was invented in the 80's!")
             Case 18
@@ -1342,36 +1371,41 @@ Public Class Form1
             Case 19
                 Caine.Speak("Did you know that the Atari 2600 was the first super popular game console? It wasn't \emp\ always like that, though. It didn't really gain popularity until the release of Space Invaders for the system, which is considered by many to be the killer app.")
             Case 20
-                Caine.Speak("It's time for an amazing fact!")
                 Caine.Speak("Did you know that the DVD was invented in 1995? It didn't get an official release until a year later, though.")
             Case 21
-                Caine.Speak("Here's a fact about Pomni.")
-                Caine.Speak("Did you know that she originally has a different color scheme in the first trailer?")
+                Caine.Speak("Did you know that Pomni originally has a different color scheme in the first trailer?")
                 Caine.Speak("Ah, good times!")
             Case 22
-                Caine.Speak("Do you like object shows, " + My.Settings.Name + "? If so, this fact is all about such!")
                 Caine.Speak("Did you know that the furthest you can go in Battle For Dream Island Again 5b is 2763 kilometers? It's even the famous number in the Battle For Dream Island series!")
             Case 23
-                Caine.Speak("It's \emp\fact time.")
                 Caine.Speak("\Map=""Doom""=""DOOM""\ is a \emp\violent game. But did you know there's a family friendly version of it called 'Chex Quest'!")
                 Caine.Speak("You don't kill the monsters, you send them back home!")
             Case 24
-                Caine.Speak("Here's some knowledge for you. ")
                 Caine.Speak("Did you know that there's a toy company called ''Playtime Co.''? It was on business from 1930 to 1995.")
-                Caine.Speak("To be frank " + My.Settings.Name + ", you and I don't wanna know why they went out of business.")
+                Caine.Speak("To be frank " & My.Settings.Name & ", you and I don't wanna know why they went out of business.")
             Case 25
-                Caine.Speak("Whoa! This is crazy!")
                 Caine.Speak("Apparently Glitch Productions has a \Map=""Blue Sky""=""Bluesky""\ account now! You can now follow them for future Digital Circus episodes!")
             Case 26
-                Caine.Speak("Woah! Apparently you can download a virus-free version of BonziBUDDY! But back then, I was still suspicious of the gorilla, so I would often terminate anything related to him, including the virus-free one.")
+                Caine.Speak("Apparently you can download a virus-free version of BonziBUDDY! But back then, I was still suspicious of the gorilla, so I would often terminate anything related to him, including the virus-free one.")
                 Caine.Speak("Thankfully after the conclusion of his vlogging series, I've decided to spare BonziBUDDY Rewritten!")
             Case 27
-                Caine.Speak("Whoa! This is crazy!")
-                Caine.Speak("Apparently there was an incident where Laser Boy received an SSD failure, losing the Source Code in the process.")
-                Caine.Speak("Thankfully a shipper rebuilt the code and we can work on Circus Pals once more!")
+                Caine.Speak("Did you know that the origins of Chess can be traced all the way back to a 7th century game in India called \Map=""Chot er aughnga?""=""Chaturanga?""\ It then went through Persia, then through Russia, and finally, it made it to Europe, where the game became what it's known as today!")
+            Case 28
+                Caine.Speak("Did you know there's a program which allows you to have butterflies on your desktop? I wouldn't recommend installing it though. Many people claim it has spyware built into it.")
+                Caine.Speak("While I don't know if those claims are true, I do know that they also released programs which allows you to have cockroaches, flies, and ladybugs on your desktop.")
+            Case 29
+                Caine.Speak("Did you know that \Map=""My Doom""=""Mydoom""\ is considered one of the most destructive computer viruses in the world?")
+                Caine.Speak("Sources say it caused an estimate of around 38 billion dollars in damages!")
+            Case 30
+                Caine.Speak("Did you know that Genie is considered one of the oldest Microsoft Agent characters in the world?")
+            Case 31
+                Caine.Speak("Apparently there's a horror game based off of BonziBUDDY which features a pink axolotl!")
+                Caine.Speak("I'm wondering if he has a virus-free remake too!")
+            Case 32
+                Caine.Speak("Did you know that Beta 1 of Microsoft Agent shared a lot of similarities with it's predecessor, Microsoft Actor?")
         End Select
         Caine.Play("ReadContinued")
-        Select Case randomEnd
+        Select Case Rnd.Next(1, 16)
             Case 1
                 Caine.Speak("I wonder how many people in the world knew that?")
             Case 2
@@ -1379,7 +1413,7 @@ Public Class Form1
             Case 3
                 Caine.Speak("I contain more knowledge than Blob, Max, or even Bonzi!")
             Case 4
-                Caine.Speak("Don't worry, " + My.Settings.Name + ", there's plenty more where \emp\that came from!")
+                Caine.Speak("Don't worry, " & My.Settings.Name & ", there's plenty more where \emp\that came from!")
             Case 5
                 Caine.Speak("Who knew.")
             Case 6
@@ -1387,7 +1421,7 @@ Public Class Form1
             Case 7
                 Caine.Speak("One of Digital Circus's \emp\many mysteries revealed!")
             Case 8
-                Caine.Speak("We just keep getting smarter every day, " + My.Settings.Name + "!")
+                Caine.Speak("We just keep getting smarter every day, " & My.Settings.Name & "!")
             Case 9
                 Caine.Speak("I'm just loaded with knowledge!")
             Case 10

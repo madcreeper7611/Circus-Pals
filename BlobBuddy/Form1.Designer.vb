@@ -469,7 +469,7 @@ Partial Class Form1
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(64, 13)
         Me.Label11.TabIndex = 10
-        Me.Label11.Text = "27 -Installed"
+        Me.Label11.Text = "32 -Installed"
         '
         'Label13
         '

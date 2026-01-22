@@ -14,7 +14,8 @@ Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Pleas
 # License
 This source code is licensed under the [Do What the %$!# You Want to Public License](https://github.com/LaserBoyStudios/Circus-Pals/blob/main/LICENSE). By using this source code, you accept 1 condition of the DWTFYWT license agreement, which is changing the name.
 
-==Compile Instructions== NOTE: I recommend you use Visual Studio 2008, as that it is what I use to develop.
+# Compile Instructions
+NOTE: We recommend you use Visual Studio 2008, as that it is what the program uses to develop.
 
 1. Open the solution file.
 2. Click compile!

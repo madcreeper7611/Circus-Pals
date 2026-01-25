@@ -97,6 +97,12 @@
     <Compile Include="BlobSingsForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChooseAssistant.Designer.vb">
+      <DependentUpon>ChooseAssistant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseAssistant.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BlobSingsForm.resx">
       <DependentUpon>BlobSingsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseAssistant.resx">
+      <DependentUpon>ChooseAssistant.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -240,6 +250,8 @@
     <None Include="Resources\agent_icon.gif" />
     <None Include="Resources\CaineShare.png" />
     <None Include="Resources\calendar.png" />
+    <None Include="Resources\AssistantBackground.png" />
+    <None Include="Resources\BalloonTip.png" />
     <Content Include="Resources\circus_pals_logo.gif" />
     <None Include="Resources\PomniBackground.bmp" />
     <None Include="Resources\msagent_error.wav" />

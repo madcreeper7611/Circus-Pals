@@ -124,14 +124,17 @@
   <data name="jordon_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jordon_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DialogBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Games" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Games.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="game_gloinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_gloinks.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CircusBit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CircusBit.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mushbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mushbutton.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -141,6 +144,15 @@
   </data>
   <data name="CircusUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CircusUpdate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Speak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Speak1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circus_pals_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circus_pals_logo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="game_spud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_spud.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,20 +166,29 @@
   <data name="CircusBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CircusBackground.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="agent_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agent_button.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Audio.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AboutBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AboutBanner.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BackgroundWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackgroundWatch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CaineShare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaineShare.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fact" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fact.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="game_candy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game_candy.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PomniBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PomniBackground.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mashbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mashbutton.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AboutBanner.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SingOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SingOff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,17 +196,11 @@
   <data name="game_haunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_haunt.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agent_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agent_button.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CircusBit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CircusBit.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agent_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agent_icon.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DialogBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="msagent_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msagent_error.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="runmsh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\runmsh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,17 +211,17 @@
   <data name="Joke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Joke.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="game_candy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game_candy.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CaineBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaineBG.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BackgroundWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundWatch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AssistantBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AssistantBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MASH.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Speak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Speak1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transparent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,22 +229,13 @@
   <data name="Animate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Animate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="circus_pals_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\circus_pals_logo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SplashScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SplashScreen.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CaineShare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CaineShare.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="msagent_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\msagent_error.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PomniBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PomniBackground.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BalloonTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BalloonTip.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

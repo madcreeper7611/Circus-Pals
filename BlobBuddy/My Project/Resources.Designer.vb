@@ -95,6 +95,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property AssistantBackground() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("AssistantBackground", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Audio() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Audio", resourceCulture)
@@ -105,6 +112,13 @@ Namespace My.Resources
         Friend ReadOnly Property BackgroundWatch() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("BackgroundWatch", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property BalloonTip() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BalloonTip", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

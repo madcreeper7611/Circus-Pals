@@ -1,8 +1,6 @@
 # Circus Pals
 Welcome to the Circus Pals repository! This repository contains the source code for Circus Pals, a modern virus-free alternative to BonziBUDDY by Bonzi Software.
 
-<b>Please note that Circus Pals is no longer being developed and is left as is, If you notice any issues with this software, fix them yourself.</b>
-
 # Introduction
 Circus Pals brings everyone's favorite Teeth-Head, Caine, to your desktop! Please note that this project is a fan-based tie-in program. The Amazing Digital Circus is owned by Screen Australia, GLITCH Productions, SMG4 and Gooseworx. Please support the official release!
 

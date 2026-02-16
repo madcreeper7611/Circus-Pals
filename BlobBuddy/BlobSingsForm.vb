@@ -5,10 +5,10 @@ Public Class BlobSingsForm
     Private filePaths As New Dictionary(Of String, String)
     Private customNames As New Dictionary(Of String, String)
     Private Sub BlobSingsForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Form1.Caine.Stop()
+        Form1.Pomni.Stop()
         Dim num As Integer = MyBase.Location.X - 20
         Dim num2 As Integer = MyBase.Location.Y - 120
-        Form1.Caine.MoveTo(CShort(num), CShort(num2))
+        Form1.Pomni.MoveTo(CShort(num), CShort(num2))
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -89,25 +89,25 @@ Public Class BlobSingsForm
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Form1.Caine.StopAll()
-        Form1.Caine.Speak("\Chr=""Normal""\")
-        Form1.Caine.Play("Blink")
+        Form1.Pomni.StopAll()
+        Form1.Pomni.Speak("\Chr=""Normal""\")
+        Form1.Pomni.Play("Blink")
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Form1.Caine.Speak("\rst\\Chr=""Normal""\")
-        Form1.Caine.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
-        Form1.Caine.Speak("Voice reset! Use this button again if Microsoft Agent or Double Agent glitch out or switch to SAPI 5 voice again! Click the Goodbye button if it still somehow continues to glitch out or use SAPI 5 voice.")
+        Form1.Pomni.Speak("\rst\\Chr=""Normal""\")
+        Form1.Pomni.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
+        Form1.Pomni.Speak("Voice reset! Use this button again if Microsoft Agent or Double Agent glitch out or switch to SAPI 5 voice again! Click the Goodbye button if it still somehow continues to glitch out or use SAPI 5 voice.")
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Form1.Caine.Speak("Having trouble? Let me help you.")
-        Form1.Caine.Play("Explain")
-        Form1.Caine.Speak("From this screen, I can sing any song you like. Simply select the song from the list and click on the Sing button.")
-        Form1.Caine.Play("Acknowledge")
+        Form1.Pomni.Speak("Having trouble? Let me help you.")
+        Form1.Pomni.Play("Explain")
+        Form1.Pomni.Speak("From this screen, I can sing any song you like. Simply select the song from the list and click on the Sing button.")
+        Form1.Pomni.Play("Acknowledge")
     End Sub
     Private Sub BlobSingsForm_Close(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.FormClosed
-        Form1.Caine.MoveTo(320, 240)
+        Form1.Pomni.MoveTo(320, 240)
     End Sub
 
     Private Sub SingIntro()
@@ -115,20 +115,20 @@ Public Class BlobSingsForm
 
         Select Case rnd.Next(1, 4)
             Case 1
-                Form1.Caine.Play("Explain")
-                Form1.Caine.Speak("Here's one Queenie used to sing to Kinger. I hope you like it.")
-                Form1.Caine.Play("FastExplain")
-                Form1.Caine.Balloon.Style = &H31C000D
+                Form1.Pomni.Play("Explain")
+                Form1.Pomni.Speak("Here's one Queenie used to sing to Kinger. I hope you like it.")
+                Form1.Pomni.Play("FastExplain")
+                Form1.Pomni.Balloon.Style = &H31C000D
                 Exit Select
             Case 2
-                Form1.Caine.Play("Explain")
-                Form1.Caine.Speak("OK, here goes.")
-                Form1.Caine.Play("FastExplain")
-                Form1.Caine.Balloon.Style = &H31C000D
+                Form1.Pomni.Play("Explain")
+                Form1.Pomni.Speak("OK, here goes.")
+                Form1.Pomni.Play("FastExplain")
+                Form1.Pomni.Balloon.Style = &H31C000D
                 Exit Select
             Case 3
-                Form1.Caine.Play("FastExplain")
-                Form1.Caine.Balloon.Style = &H31C000D
+                Form1.Pomni.Play("FastExplain")
+                Form1.Pomni.Balloon.Style = &H31C000D
                 Exit Select
         End Select
     End Sub

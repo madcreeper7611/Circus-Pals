@@ -9,9 +9,9 @@
     ' NetworkAvailabilityChanged: Raised when the network connection is connected or disconnected.
     Partial Friend Class MyApplication
         Private Sub MyApplication_UnhandledException(ByVal sender As System.Object, ByVal e As System.UnhandledExceptionEventArgs)
-            Form1.Caine.Play("Surprised")
-            Form1.Caine.Speak("Gasp! My program almost crashed! Can you report the error to \ctx=""Email""\circuspals@w10.site?")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("Surprised")
+            Form1.Pomni.Speak("Gasp! My program almost crashed! Can you report the error to \ctx=""Email""\circuspals@w10.site?")
+            Form1.Pomni.Play("Blink")
         End Sub
     End Class
 End Namespace

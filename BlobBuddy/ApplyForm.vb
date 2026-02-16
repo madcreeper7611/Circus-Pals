@@ -35,16 +35,16 @@ Public Class ApplyForm
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         If Not dateFormat.IsMatch(TextBox2.Text) Then
-            Form1.Caine.Play("FastExplain")
-            Form1.Caine.Speak("You must a valid a reminder date before you can save the appointment.")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("FastExplain")
+            Form1.Pomni.Speak("You must a valid a reminder date before you can save the appointment.")
+            Form1.Pomni.Play("Blink")
             Return
         End If
 
         If String.IsNullOrEmpty(TextBox1.Text) Then
-            Form1.Caine.Play("FastExplain")
-            Form1.Caine.Speak("You must enter some text for the appointment before you can save it.")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("FastExplain")
+            Form1.Pomni.Speak("You must enter some text for the appointment before you can save it.")
+            Form1.Pomni.Play("Blink")
         Else
             EnsureXmlFileExists()
             Dim xmlDoc = New XmlDocument()
@@ -92,9 +92,9 @@ Public Class ApplyForm
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         If Not dateFormat.IsMatch(TextBox2.Text) Then
-            Form1.Caine.Play("FastExplain")
-            Form1.Caine.Speak("You must a valid reminder date before you can save the appointment.")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("FastExplain")
+            Form1.Pomni.Speak("You must a valid reminder date before you can save the appointment.")
+            Form1.Pomni.Play("Blink")
             Return
         End If
 
@@ -119,9 +119,9 @@ Public Class ApplyForm
                     ReloadEvents()
                 End If
             Else
-                Form1.Caine.Play("FastExplain")
-                Form1.Caine.Speak("You must enter some text for the appointment before you can save it.")
-                Form1.Caine.Play("Blink")
+                Form1.Pomni.Play("FastExplain")
+                Form1.Pomni.Speak("You must enter some text for the appointment before you can save it.")
+                Form1.Pomni.Play("Blink")
                 Return
             End If
         End If
@@ -143,9 +143,9 @@ Public Class ApplyForm
                 End If
             End If
         Else
-            Form1.Caine.Play("Decline")
-            Form1.Caine.Speak("You'll need to choose an appointment to delete from the Appointments list first. Just click on the appointment you wish to delete, and then click on the Delete button.")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("Decline")
+            Form1.Pomni.Speak("You'll need to choose an appointment to delete from the Appointments list first. Just click on the appointment you wish to delete, and then click on the Delete button.")
+            Form1.Pomni.Play("Blink")
         End If
     End Sub
 

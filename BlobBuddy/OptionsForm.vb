@@ -2,7 +2,7 @@
     Public allowClose
 
     Private Sub OptionsForm_Close(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.FormClosed
-        Form1.Caine.MoveTo(320, 240)
+        Form1.Pomni.MoveTo(320, 240)
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -109,7 +109,7 @@
     Private Sub OptionsForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim num As Integer = MyBase.Location.X - 20
         Dim num2 As Integer = MyBase.Location.Y - 120
-        Form1.Caine.MoveTo(CShort(num), CShort(num2))
+        Form1.Pomni.MoveTo(CShort(num), CShort(num2))
         ' RANDOM SPEECH CHECKBOX
         If My.Settings.isRandomSpeech = False Then
             CheckBox2.Checked = True
@@ -193,31 +193,31 @@
         Form1.AxAgent1.PropertySheet.Visible = True
         Dim num As Integer = Form1.AxAgent1.PropertySheet.Left - 20
         Dim num2 As Integer = Form1.AxAgent1.PropertySheet.Top - 120
-        Form1.Caine.Stop()
-        Form1.Caine.GestureAt(Form1.AxAgent1.PropertySheet.Left, Form1.AxAgent1.PropertySheet.Top)
-        Form1.Caine.Speak("Hey! That looks like the Microsoft Agent advanced options window!")
-        Form1.Caine.MoveTo(CShort(num), CShort(num2))
-        Form1.Caine.Play("Blink")
-        Form1.Caine.Speak("You can change many ways we agents interact with you here.")
+        Form1.Pomni.Stop()
+        Form1.Pomni.GestureAt(Form1.AxAgent1.PropertySheet.Left, Form1.AxAgent1.PropertySheet.Top)
+        Form1.Pomni.Speak("Hey! That looks like the Microsoft Agent advanced options window!")
+        Form1.Pomni.MoveTo(CShort(num), CShort(num2))
+        Form1.Pomni.Play("Blink")
+        Form1.Pomni.Speak("You can change many ways we agents interact with you here.")
     End Sub
     Private Sub Auto()
         If Form1.AxAgent1.PropertySheet.Visible = False Then
             Dim num As Integer = MyBase.Location.X - 20
             Dim num2 As Integer = MyBase.Location.Y - 120
-            Form1.Caine.MoveTo(CShort(num), CShort(num2))
+            Form1.Pomni.MoveTo(CShort(num), CShort(num2))
         End If
     End Sub
 
     Private Sub CheckBox4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox4.CheckedChanged
         If CheckBox4.Checked Then
             My.Settings.InteractHelp = True
-            Form1.Caine.Play("Acknowledge")
+            Form1.Pomni.Play("Acknowledge")
             My.Settings.Save()
         Else
             My.Settings.InteractHelp = False
-            Form1.Caine.Play("Sad")
-            Form1.Caine.Speak("Okay, but I'm going to miss helping you when you load an audio or Mash file..|Fine, I'll shut the heck up...")
-            Form1.Caine.Play("Blink")
+            Form1.Pomni.Play("Sad")
+            Form1.Pomni.Speak("Okay, but I'm going to miss helping you when you load an audio or Mash file..|Fine, I'll shut the heck up...")
+            Form1.Pomni.Play("Blink")
             My.Settings.Save()
         End If
     End Sub

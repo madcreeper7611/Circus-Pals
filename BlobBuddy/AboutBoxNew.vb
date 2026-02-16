@@ -2,11 +2,11 @@
 
     Public Sub AboutBoxNew_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Label1.Text = My.Application.Info.Version.ToString
-        Form1.Caine.MoveTo(Location.X - 20, Location.Y - 120)
+        Form1.Pomni.MoveTo(Location.X - 20, Location.Y - 120)
     End Sub
 
     Private Sub AboutBoxNew_Close(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.FormClosed
-        Form1.Caine.MoveTo(320, 240)
+        Form1.Pomni.MoveTo(320, 240)
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked

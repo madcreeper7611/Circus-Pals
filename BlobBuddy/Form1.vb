@@ -152,12 +152,12 @@ Public Class Form1
                 Me.Text = "Welcome to The Amazing Digital Circus, " & My.Settings.Name & "!"
 
                 Dim random As New Random()
-                Dim randomNumber As Integer = random.Next(1, 6)
+                Dim randomNumber As Integer = random.Next(1, 4)
 
                 Select Case randomNumber
                     Case 1
                         Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Welcome back, my \Map=""me-ah-wing""=""meowing""\ milkmaid!")
+                        Pomni.Speak("\Vol=65535\Oh. Hello there, " & My.Settings.Name & ".")
                         Pomni.Play("Blink")
                     Case 2
                         Pomni.Play("Wave")
@@ -165,15 +165,7 @@ Public Class Form1
                         Pomni.Play("Blink")
                     Case 3
                         Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Nice to see you again, " & My.Settings.Name & "!")
-                        Pomni.Play("Blink")
-                    Case 4
-                        Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Hello, " & My.Settings.Name & "! Ready for another adventure?")
-                        Pomni.Play("Blink")
-                    Case 5
-                        Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Welcome back to the circus, " & My.Settings.Name & "! We've missed you!")
+                        Pomni.Speak("\Vol=65535\Nice to see you again, " & My.Settings.Name & ".")
                         Pomni.Play("Blink")
                 End Select
             End If
@@ -192,53 +184,24 @@ Public Class Form1
         Pomni.StopAll()
 
         Dim random As New Random()
-        Dim randomNumber32 As Integer = random.Next(1, 11)
+        Dim randomNumber32 As Integer = random.Next(1, 6)
 
         Select Case randomNumber32
             Case 1
                 Pomni.Play("Wave")
-                Pomni.Speak("It hurts me to say goodbye, " & My.Settings.Name & ".")
-            Case 2
-                Pomni.Play("Wave")
-                Pomni.Speak("Until next time my friend!")
-            Case 3
-                Pomni.Play("Wave")
                 Pomni.Speak("Until next time, " & My.Settings.Name & ".")
-            Case 4
+            Case 2
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("Well, I guess I am done for today. Bye for now.")
-            Case 5
+            Case 3
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("It looks like my work here is done. See you later.")
-            Case 6
+            Case 4
                 Pomni.Play("wave")
                 Pomni.Speak("I hope to see you again soon, " & My.Settings.Name & ".")
-            Case 7
-                Pomni.Play("Surprised")
-                Pomni.Speak("Oh no! Not the exit!")
-            Case 8
-                Pomni.Play("RestPose")
-                Pomni.Speak("Oh, guess I'll instantly disappear")
-                Pomni.Play("Silly")
-            Case 9
-                Pomni.Play("Explain")
-                Pomni.Speak("Well, I'm going to go drink water! It's been a \emp\while since I've done that.")
-            Case 10
-                Pomni.Play("Restpose")
-                Pomni.Speak("\emp\I am such a good \Pit=400\\Spd=250\\Map=""bah-ah-ah-ah-ah-ah-ah-ah-ah-ah-\rst\sahtmtornmhsrp;h;xhgzodpsosoaaah,""=""bo-""\")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Think("...")
-                Pomni.Think("...")
-                Pomni.Think("...")
+            Case 5
+                Pomni.Play("Decline")
+                Pomni.Speak("Please don't leave me alone!")
         End Select
 
         LeaveRequest = Pomni.Hide()
@@ -349,7 +312,7 @@ Public Class Form1
 
     Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
         If Pomni.Visible Then
-            Pomni.Speak("Sorry my friend. I am already here!")
+            Pomni.Speak("Uh.. I'm still here.")
         Else
             Pomni.Show()
         End If
@@ -394,8 +357,8 @@ Public Class Form1
                 Pomni.Play("Surprised")
                 Pomni.Speak("Owie! Careful with that thing!")
             Case 5
-                Pomni.Play("Decline")
-                Pomni.Speak("I'm gonna eventually put you in the \Map=""time out""=""timeout""\ corner if you keep double clicking!")
+                Pomni.Play("Mad")
+                Pomni.Speak("Don't click on me! I hate being touched like that!")
             Case 6
                 Pomni.Play("Uncertain")
                 Pomni.Speak("A bit clicky today, aren't we?")
@@ -740,170 +703,140 @@ Public Class Form1
         If processes.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes2.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes3.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes4.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes5.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes6.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes7.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes8.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes9.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
         If processes10.Length > 0 Then
             For Each process As Process In processes
                 Try
-                    Pomni.Play("DoMagic1")
-                    Pomni.Speak("Oops! Looks like one of \emp\those programs made it through!")
-                    Pomni.Play("DoMagic2")
+                    Pomni.Speak("Sorry, But I may have to close this.")
                     process.Kill()
-                    Pomni.Speak("I know you \emp\love your desktop buddies " & My.Settings.Name & ", but if \emp\I start losing track of who's the OG Bonzi and who's the virus-free Bonzi,")
-                    Pomni.Play("Uncertain")
-                    Pomni.Speak("Who \emp\knows what could happen...")
+                    Pomni.Play("Explain")
+                    Pomni.Speak("Don't blame me for it, it's just in Caine's rules.")
                     ThreatDetected.Show()
                 Catch ex As Exception
-                    Pomni.Play("Sad")
-                    Pomni.Speak("Aw shoot, I couldn't get rid of the malware.")
+                    Pomni.Play("Surprised")
+                    Pomni.Speak("Uh, why is it still running?")
                 End Try
             Next
         End If
@@ -926,15 +859,10 @@ Public Class Form1
         Dim rnd As New Random()
         Select Case rnd.Next(1, 23)
             Case 1
-                Pomni.Play("Explain")
-                Pomni.Speak(My.Settings.Name + "! Where did the time go?")
-                Pomni.Play("Pleased")
-                Pomni.Speak("Can't you just feel us getting closer with every new day!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 2
-                Pomni.Play("Idle2_1")
-                Pomni.Speak("Don't mind me, I'm just playing along with Bubble.")
+                Pomni.Play("Idle2_2")
+                Pomni.Speak("I swear I just saw an exit door!")
                 Pomni.Play("Restpose")
                 Exit Select
             Case 3
@@ -943,28 +871,14 @@ Public Class Form1
                 Pomni.Play("Restpose")
                 Exit Select
             Case 4
-                Pomni.Play("Pleased")
-                Pomni.Speak(My.Settings.Name + "! I've noticed you've been looking \emp\sharp as a tack these days!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 5
-                Pomni.Play("Blink")
-                Pomni.Speak("Hmm, I should check up on my superstars.")
                 Exit Select
             Case 6
-                Pomni.Play("Pleased")
-                Pomni.Speak("Ah! What a nice day to do nothing!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 7
-                Pomni.Play("Explain")
-                Pomni.Speak("Why not listen to some music? Or watch some Mash files? They're \emp\ sure to entertain you!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 8
-                Pomni.Play("Think")
-                Pomni.Speak("Do you ever wonder if Joel would eventually feature me?")
-                Pomni.Play("Blink")
                 Exit Select
             Case 9
                 Pomni.Play("GestureDown")
@@ -972,51 +886,18 @@ Public Class Form1
                 Pomni.Play("Blink")
                 Exit Select
             Case 10
-                Pomni.Play("Pleased")
-                Pomni.Speak("You're so fun to be around, " & My.Settings.Name & "!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 11
-                Pomni.Play("Wave")
-                Pomni.Speak("Hey " & My.Settings.Name & ", you're looking quite nice today!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 12
-                Pomni.Play("Alert")
-                Pomni.Speak("" & My.Settings.Name & ", guess what! I can see people's search history!")
-                Pomni.Speak("Let me start with Jax!")
-                Pomni.Play("Search")
-                Pomni.Play("Surprised")
-                Pomni.Speak("\Pit=400\\Spd=194\OH MY GOODNESS!")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Uncertain")
-                Pomni.Speak("\Pit=123\\Spd=107\Ah, much better..")
                 Exit Select
             Case 13
-                Pomni.Play("DoMagic1")
-                Pomni.Speak("\Map=""Ala-kuh-blam!""=""Alakablam!""\Summon me my superstars!")
-                Pomni.Play("DoMagic2")
-                Pomni.Speak("...")
-                Pomni.Speak("...")
-                Pomni.Play("Uncertain")
-                Pomni.Speak("Darn it!")
-                Pomni.Play("Blink")
                 Exit Select
             Case 14
-                Pomni.Play("FastExplain")
-                Pomni.Speak("\Chr=""Monotone""\\Map=""\Pit=104\\Spd=130\doe \Pit=117\ray \Pit=131\me \Pit=139\fah \Pit=156\so \Pit=175\lah \Pit=196\tea \Pit=208\doe""=""do re mi fa so la ti do""\")
-                Pomni.Play("Blink")
-                Pomni.Speak("\Chr=""Normal""\What? I'm practicing my singing!")
                 Exit Select
             Case 15
-                Pomni.Think("Think")
-                Pomni.Speak("Well I \emp\hope you're not making any weird pictures of Pomni right now.")
-                Pomni.Play("Blink")
                 Exit Select
             Case 16
-                Pomni.Play("Alert")
-                Pomni.Speak("\Pit=400\" & My.Settings.Name & "? This is what I would sound like if I were only one quarter of my actual size!\rst\")
-                Pomni.Play("Blink")
                 Exit Select
             Case 17
                 Pomni.MoveTo(0, 480)
@@ -1045,7 +926,7 @@ Public Class Form1
         Select Case Rnd.Next(1, 26)
             Case 1
                 Pomni.Play("Alert")
-                Pomni.Speak("A joke? Sure, why not?")
+                Pomni.Speak("A joke? Sure, I guess.")
             Case 2
                 Pomni.Play("Alert")
                 Pomni.Speak("Okay, if you're sure.")
@@ -1077,8 +958,8 @@ Public Class Form1
                 Pomni.Play("Pleased")
                 Pomni.Speak("I've been waiting to do this one, " & My.Settings.Name & "!")
             Case 12
-                Pomni.Play("Surprised")
-                Pomni.Speak("I didn't think you liked my jokes \emp\ this much, " & My.Settings.Name & "!")
+                Pomni.Play("Acknowledge")
+                Pomni.Speak("Well, if they make you laugh, " & My.Settings.Name & ".")
             Case 13
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("Let's go!")
@@ -1478,53 +1359,24 @@ Public Class Form1
         Pomni.StopAll()
 
         Dim random As New Random()
-        Dim randomNumber32 As Integer = random.Next(1, 11)
+        Dim randomNumber32 As Integer = random.Next(1, 6)
 
         Select Case randomNumber32
             Case 1
                 Pomni.Play("Wave")
-                Pomni.Speak("It hurts me to say goodbye, " & My.Settings.Name & ".")
-            Case 2
-                Pomni.Play("Wave")
-                Pomni.Speak("Until next time my friend!")
-            Case 3
-                Pomni.Play("Wave")
                 Pomni.Speak("Until next time, " & My.Settings.Name & ".")
-            Case 4
+            Case 2
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("Well, I guess I am done for today. Bye for now.")
-            Case 5
+            Case 3
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("It looks like my work here is done. See you later.")
-            Case 6
+            Case 4
                 Pomni.Play("wave")
                 Pomni.Speak("I hope to see you again soon, " & My.Settings.Name & ".")
-            Case 7
-                Pomni.Play("Surprised")
-                Pomni.Speak("Oh no! Not the exit!")
-            Case 8
-                Pomni.Play("RestPose")
-                Pomni.Speak("Oh, guess I'll instantly disappear")
-                Pomni.Play("Silly")
-            Case 9
-                Pomni.Play("Explain")
-                Pomni.Speak("Well, I'm going to go drink water! It's been a \emp\while since I've done that.")
-            Case 10
-                Pomni.Play("Restpose")
-                Pomni.Speak("\emp\I am such a good \Pit=400\\Spd=250\\Map=""bah-ah-ah-ah-ah-ah-ah-ah-ah-ah-\rst\sahtmtornmhsrp;h;xhgzodpsosoaaah,""=""bo-""\")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Play("Idle3_1")
-                Pomni.Think("...")
-                Pomni.Think("...")
-                Pomni.Think("...")
+            Case 5
+                Pomni.Play("Decline")
+                Pomni.Speak("Please don't leave me alone!")
         End Select
 
         LeaveRequest = Pomni.Hide()
@@ -1536,8 +1388,8 @@ Public Class Form1
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         If RadioButton1.Checked = True Then
-            Pomni.Play("Pleased")
-            Pomni.Speak("Ah yes! The old ways of sharing particular files.")
+            Pomni.Play("Announce")
+            Pomni.Speak("Alright, but be wise on who to send it to.")
             Pomni.Play("RestPose")
             Dim webAddress As String = "mailto:info@example.com?&subject=&cc=&bcc=&body=http://circuspals.w10.site"
             Process.Start(webAddress)

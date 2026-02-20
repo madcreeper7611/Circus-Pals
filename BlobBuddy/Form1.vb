@@ -177,9 +177,9 @@ Public Class Form1
                         Caine.Play("Blink")
                 End Select
             End If
-            If currentTime.Month = 8 And currentTime.Day = 31 Then
+            If currentTime.Month = 4 And currentTime.Day = 28 Then
                 Caine.Play("Announce")
-                Caine.Speak("\Vol=65535\Also Happy Birthday to Laser Boy!")
+                Caine.Speak("\Vol=65535\Also Happy Birthday to JordyPorgie!")
             End If
         End If
     End Sub
@@ -665,8 +665,8 @@ Public Class Form1
             Caine.Speak("Be careful! There is some crazy stuff on this website!")
             Caine.Play("RestPose")
         End If
-        If URLTextBox.Text = "http://laserboy.neocities.org" OrElse URLTextBox.Text = "http://laserboy.neocities.org" Then
-            Caine.Speak("The boy with the laser!")
+        If URLTextBox.Text = "https://jordyporgie.nekoweb.org/" OrElse URLTextBox.Text = "https://jordyporgie.nekoweb.org/" Then
+            Caine.Speak("The tuatara man!")
         End If
         If URLTextBox.Text = "http://mugmanfr.neocities.org" OrElse URLTextBox.Text = "http://mugmanfr.neocities.org" Then
             Caine.Speak("The mug, the man, the legend!")
@@ -1553,7 +1553,7 @@ Public Class Form1
             Caine.Play("Congratulate2")
             Caine.Speak("Alright, lets share it!")
             Caine.Play("RestPose")
-            Dim webAddress As String = "https://bsky.app/intent/compose?text=Check%20out%20this%20awesome%20program!%20%20https%3A//circuspals.w10.site%20via%20Laser%20Boy%20Studios!"
+            Dim webAddress As String = "https://bsky.app/intent/compose?text=Check%20out%20this%20awesome%20program!%20%20https%3A//circuspals.w10.site%20via%20JordyPorgie!"
             Process.Start(webAddress)
         End If
         If RadioButton4.Checked = True Then

@@ -128,45 +128,53 @@ Public Class Form1
 
                 Select Case randomNumber64
                     Case 1
-                        Pomni.Play("Uncertain")
-                        Pomni.Speak("\Vol=65535\Do you ever sleep, " & My.Settings.Name & "?")
-                        Pomni.Play("Blink")
+                        Pomni.Play("Idle3_1")
+                        Pomni.Play("Sad")
+                        Pomni.Speak("\Vol=65535\\Pit=96\\Spd=84\Do you ever sleep, " + My.Settings.Name + "?")
+                        Pomni.Play("Idle3_1")
                     Case 2
+                        Pomni.Play("Idle3_1")
                         Pomni.Play("Confused")
-                        Pomni.Speak("\Vol=65535\Wait! Why are you up so late?")
-                        Pomni.Play("Blink")
+                        Pomni.Speak("\Vol=65535\\Pit=96\\Spd=84\Wait.. Why are you up so late?")
+                        Pomni.Play("Idle3_1")
                     Case 3
-                        Pomni.Play("Alert")
-                        Pomni.Speak("\Vol=65535\I \emp\ really think you should be in bed, but okay, I'm here to entertain you.")
-                        Pomni.Play("Blink")
+                        Pomni.Play("Announce")
+                        Pomni.Speak("\Vol=65535\\Pit=96\I \emp\really think you should be in bed, but okay.")
+                        Pomni.Play("Idle3_1")
                     Case 4
-                        Pomni.Play("Surprised")
-                        Pomni.Speak("\Vol=65535\Surprised to see you up this late, " & My.Settings.Name & "!")
-                        Pomni.Play("Blink")
+                        Pomni.Play("Idle3_1")
+                        Pomni.Play("Sad")
+                        Pomni.Speak("\Vol=65535\\Pit=96\\Spd=84\Surprised to see you up this late, " + My.Settings.Name + ".")
+                        Pomni.Play("Idle3_1")
                     Case 5
-                        Pomni.Play("Uncertain")
-                        Pomni.Speak("\Vol=65535\It's getting dark, " & My.Settings.Name & ". Can't it wait?")
-                        Pomni.Play("Blink")
+                        Pomni.Play("Idle3_1")
+                        Pomni.Play("Sad")
+                        Pomni.Speak("\Vol=65535\\Pit=96\\Spd=84\I'm pretty tired, " + My.Settings.Name + ". Can't it wait?")
+                        Pomni.Play("Idle3_1")
                 End Select
             Else
                 Me.Text = "Welcome to The Amazing Digital Circus, " & My.Settings.Name & "!"
 
                 Dim random As New Random()
-                Dim randomNumber As Integer = random.Next(1, 4)
+                Dim randomNumber As Integer = random.Next(1, 5)
 
                 Select Case randomNumber
                     Case 1
                         Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Oh. Hello there, " & My.Settings.Name & ".")
-                        Pomni.Play("Blink")
+                        Pomni.Speak("\Vol=65535\Hi there.")
+                        Pomni.Play("Restpose")
                     Case 2
                         Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Welcome back my little hard-shelled hamburger!")
-                        Pomni.Play("Blink")
+                        Pomni.Speak("\Vol=65535\Sup.")
+                        Pomni.Play("Restpose")
                     Case 3
                         Pomni.Play("Wave")
-                        Pomni.Speak("\Vol=65535\Nice to see you again, " & My.Settings.Name & ".")
-                        Pomni.Play("Blink")
+                        Pomni.Speak("\Vol=65535\Hello " + My.Settings.Name + ", didn't expect you to open me.")
+                        Pomni.Play("Restpose")
+                    Case 4
+                        Pomni.Play("Wave")
+                        Pomni.Speak("\Vol=65535\Oh, it's you again.")
+                        Pomni.Play("Restpose")
                 End Select
             End If
             If currentTime.Month = 8 And currentTime.Day = 31 Then
@@ -184,22 +192,28 @@ Public Class Form1
         Pomni.StopAll()
 
         Dim random As New Random()
-        Dim randomNumber32 As Integer = random.Next(1, 6)
+        Dim randomNumber32 As Integer = random.Next(1, 8)
 
         Select Case randomNumber32
             Case 1
-                Pomni.Play("Wave")
-                Pomni.Speak("Until next time, " & My.Settings.Name & ".")
+                Pomni.Play("Surprised")
+                Pomni.Speak("Oh no!")
             Case 2
-                Pomni.Play("Acknowledge")
-                Pomni.Speak("Well, I guess I am done for today. Bye for now.")
+                Pomni.Play("Surprised")
+                Pomni.Speak("Ah crap, that's the ''clown remover'' button!")
             Case 3
-                Pomni.Play("Acknowledge")
-                Pomni.Speak("It looks like my work here is done. See you later.")
+                Pomni.Play("RestPose")
+                Pomni.Speak("Disappearing now.")
             Case 4
-                Pomni.Play("wave")
-                Pomni.Speak("I hope to see you again soon, " & My.Settings.Name & ".")
+                Pomni.Play("Acknowledge")
+                Pomni.Speak("Oh okay.")
             Case 5
+                Pomni.Play("Wave")
+                Pomni.Speak("Um, k bye.")
+            Case 6
+                Pomni.Play("Uncertain")
+                Pomni.Speak("Um, that's not the exit but, O-")
+            Case 7
                 Pomni.Play("Decline")
                 Pomni.Speak("Please don't leave me alone!")
         End Select
@@ -219,13 +233,13 @@ Public Class Form1
         Select Case randomNumber
             Case 1
                 Pomni.Play("Alert")
-                Pomni.Speak("Home sweet home, here we come!")
+                Pomni.Speak("That's not my home!")
             Case 2
-                Pomni.Play("Alert")
-                Pomni.Speak("OK! There's plenty of \emp\amazing things happening at our home!")
+                Pomni.Play("Confused")
+                Pomni.Speak("I don't think anything good's happening at our home.")
             Case 3
-                Pomni.Play("Alert")
-                Pomni.Speak("It's always nice to visit our home!")
+                Pomni.Play("Uncertain")
+                Pomni.Speak("Oh OK!")
             Case 4
                 Pomni.Play("Alert")
                 Pomni.Speak("Home is where the heart is!")
@@ -280,8 +294,8 @@ Public Class Form1
 
     Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
         Pomni.Speak("\rst\\Chr=""Normal""\")
-        Pomni.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
-        Pomni.Speak("Voice reset! Use this button again if Microsoft Agent or Double Agent glitch out or switch to SAPI 5 voice again! Click the Goodbye button if it still somehow continues to glitch out or use SAPI 5 voice.")
+        Pomni.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273008}"
+        Pomni.Speak("Voice reset. Use this button again if my voice starts abstracting. Click the Goodbye button if I still somehow continue to abstract.")
     End Sub
 
     Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
@@ -341,66 +355,24 @@ Public Class Form1
 
     Private Sub AxAgent1_DblClick(ByVal sender As Object, ByVal e As AxAgentObjects._AgentEvents_DblClickEvent) Handles AxAgent1.DblClick
         Dim random5 As New Random()
-        Dim randomNumber As Integer = random5.Next(1, 20)
+        Dim randomNumber As Integer = random5.Next(1, 5)
         Pomni.StopAll()
         Select Case randomNumber
             Case 1
-                Pomni.Play("Surprised")
-                Pomni.Speak("Hey! Don't double click me!")
+                Pomni.Play("Mad")
+                Pomni.Speak("I'm gonna eventually abstract if you keep double clicking!")
+                Pomni.Play("RestPose")
             Case 2
-                Pomni.Play("Confused")
-                Pomni.Speak("Uh, can I help you?")
+                Pomni.Play("Alert")
+                Pomni.Speak("Somebody's a bit crazy with the mouse pointer!")
+                Pomni.Play("RestPose")
             Case 3
                 Pomni.Play("Uncertain")
-                Pomni.Speak("Please don't double click, I'm a bit sensitive.")
+                Pomni.Speak("You poked me..")
+                Pomni.Play("RestPose")
             Case 4
-                Pomni.Play("Surprised")
-                Pomni.Speak("Owie! Careful with that thing!")
-            Case 5
                 Pomni.Play("Mad")
-                Pomni.Speak("Don't click on me! I hate being touched like that!")
-            Case 6
-                Pomni.Play("Uncertain")
-                Pomni.Speak("A bit clicky today, aren't we?")
-            Case 7
-                Pomni.Play("Acknowledge")
-                Pomni.Speak("I'm at your service.")
-            Case 8
-                Pomni.Play("Uncertain")
-                Pomni.Speak("Thanks for pointing that out.")
-            Case 9
-                Pomni.Play("Surprised")
-                Pomni.Speak("Watch it with that mouse pointer!")
-            Case 10
-                Pomni.Play("Uncertain")
-                Pomni.Speak("Yes?")
-            Case 11
-                Pomni.Play("Uncertain")
-                Pomni.Speak("Are you pointing at me?")
-            Case 12
-                Pomni.Play("Alert")
-                Pomni.Speak("Somebody's a bit fresh with the mouse pointer!")
-            Case 13
-                Pomni.Play("Giggle")
-                Pomni.Speak("Ha ha! That tickles.")
-            Case 14
-                Pomni.Play("Uncertain")
-                Pomni.Speak("What can I do for you, " & My.Settings.Name & "?")
-            Case 15
-                Pomni.Play("Uncertain")
-                Pomni.Speak("The Circus Pals window has my interact menu.")
-            Case 16
-                Pomni.Play("Uncertain")
-                Pomni.Speak("The Circus Pals window contains my search and interact menus.")
-            Case 17
-                Pomni.Play("Uncertain")
-                Pomni.Speak("Try the Circus Pals window.")
-            Case 18
-                Pomni.Play("Pleased")
-                Pomni.Speak("Heh, I don't mind you using the cursor as a back scratcher.")
-            Case 19
-                Pomni.Play("Uncertain")
-                Pomni.Speak("If you're trying to pet me, the cursor is too sharp and pointy for that.")
+                Pomni.Speak("Don't do that! You know I hate being touched like that!")
         End Select
         Pomni.Play("Blink")
     End Sub
@@ -413,59 +385,15 @@ Public Class Form1
 
     Private Sub AxAgent1_DragComplete(ByVal sender As Object, ByVal e As AxAgentObjects._AgentEvents_DragCompleteEvent) Handles AxAgent1.DragComplete
         Dim random5 As New Random()
-        Dim randomNumber As Integer = random5.Next(1, 26)
+        Dim randomNumber As Integer = random5.Next(1, 4)
         Select Case randomNumber
             ' temp solution, maybe perm if it just works?
             Case 1
-                Pomni.Speak("Hey " & My.Settings.Name & "! What gives?")
+                Pomni.Speak("Are you doing this because Caine wasn't here to move me?")
             Case 2
-                Pomni.Speak("Excuse me?")
+                Pomni.Speak("I hate this spot!")
             Case 3
-                Pomni.Speak("Are you doing this because you hate when I move on my own?")
-            Case 4
-                Pomni.Speak("Woah! Put me down!")
-            Case 5
-                Pomni.Speak("Huh. Not bad.")
-            Case 6
-                Pomni.Speak("Oooooh!")
-            Case 7
-                Pomni.Speak("OK, I guess this is my temporary spot now.")
-            Case 8
-                Pomni.Speak("Uh, what?")
-            Case 9
-                Pomni.Speak("Oh, is this where you wanted me?")
-            Case 10
-                Pomni.Speak("I'll have a \emp\much better view from here.")
-            Case 11
-                Pomni.Speak("Now, what was wrong with being over there?")
-            Case 12
-                Pomni.Speak("Thanks for putting me in my place.")
-            Case 13
-                Pomni.Speak("I've finally arrived!")
-            Case 14
                 Pomni.Speak("I'm not sure I like this spot!")
-            Case 15
-                Pomni.Speak("This is a nice spot.")
-            Case 16
-                Pomni.Speak("Change is always good.")
-            Case 17
-                Pomni.Speak("OK OK! I'll stay over here.")
-            Case 18
-                Pomni.Speak("This is a nicer spot anyway.")
-            Case 19
-                Pomni.Speak("Sorry, didn't realize I was in your way.")
-            Case 20
-                Pomni.Speak("Was I in your way?")
-            Case 21
-                Pomni.Speak("That was a \emp\wild ride!")
-            Case 22
-                Pomni.Speak("What a fresh perspective!")
-            Case 23
-                Pomni.Speak("Moving is always a drag.")
-            Case 24
-                Pomni.Speak("Really? Is this because of me moving Pomni?")
-            Case 25
-                Pomni.Speak("Now why did you move me?")
         End Select
         Pomni.Play("Blink")
     End Sub
@@ -473,8 +401,8 @@ Public Class Form1
 
     Private Sub MashButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MashButton.Click
         If My.Settings.MashTalk = True Or My.Settings.InteractHelp = True Then
-            Pomni.Speak("Select the name of the Mash script you want to open! When you're done, click the \emp\Open button.")
-            Pomni.Speak("If it has me in it, I recommend you hide me first before opening it!")
+            Pomni.Speak("An MSH file? I think you need the Microsoft Agent Scripting Helper to run those.")
+            Pomni.Speak("Uh, and if it stars me, Could you hide me first before opening it? Thanks.")
             My.Settings.MashTalk = False
         End If
         If My.Settings.is64bit = 2 Then
@@ -516,7 +444,9 @@ Public Class Form1
 
     Private Sub PictureBox10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox10.Click
         If My.Settings.AudioTalk = True Or My.Settings.InteractHelp = True Then
-            Pomni.Speak("Select the name of the file you want to open! When you're done, click the \emp\Open button!")
+            Pomni.Speak("An audio file? OK, as long as it's a Wave file.")
+            Pomni.Play("Sad")
+            Pomni.Speak("Look, blame Microsoft for not updating us to support those!")
             My.Settings.AudioTalk = False
         End If
         OpenFileDialog2.Filter = ".WAV files|*.wav"
@@ -539,7 +469,8 @@ Public Class Form1
         Dim processes() As Process = Process.GetProcessesByName("Bandicam")
 
         If processes.Length > 0 Then
-            Pomni.Speak("Heya, if you're going to record a demonstration of my program, at \emp\least use something else other than Bandicam.")
+            Pomni.Play("Announce")
+            Pomni.Speak("Hey, isn't Bandicam forbidden by TMAFE law?")
         End If
     End Sub
 
@@ -585,11 +516,11 @@ Public Class Form1
             Pomni.Speak("Ok, lets Google! Remember not to look yourself up!")
         End If
         If URLTextBox.Text = "http://tmafe.com" OrElse URLTextBox.Text = "https://tmafe.com" Then
-            Pomni.Speak("What an awesome website!")
+            Pomni.Speak("What an strange website!")
         End If
         If URLTextBox.Text = "http://youtube.com" OrElse URLTextBox.Text = "https://youtube.com" Then
             Pomni.Play("Alert")
-            Pomni.Speak("Be careful! This site contains a \emp\lot of Content Farms!")
+            Pomni.Speak("Are you sure you wanna do this? Oh whatever,")
             Pomni.Play("RestPose")
         End If
         If URLTextBox.Text = "http://bitview.com" OrElse URLTextBox.Text = "http://bitview.com" Then
@@ -599,20 +530,20 @@ Public Class Form1
             Pomni.Speak("Interesting!")
         End If
         If URLTextBox.Text = "http://microsoft.com" OrElse URLTextBox.Text = "https://microsoft.com" Then
-            Pomni.Speak("Oh wow, the people who bought \Map=""Mine-Craft!""=""MINECRAFT!""\ Anyways.")
+            Pomni.Speak("Oh wow, the people who bloated Windows 11 with AI. Anyways.")
         End If
         If URLTextBox.Text = "http://amazon.com" OrElse URLTextBox.Text = "https://amazon.com" Then
-            Pomni.Speak("Hey! Buy me some props!")
+            Pomni.Speak("Hey! Buy me a teleporter!")
         End If
         If URLTextBox.Text = "http://digitalcircus.store" OrElse URLTextBox.Text = "http://digitalcircus.store" Then
-            Pomni.Speak("Remember! All merch sales go right back into funding the show!")
+            Pomni.Speak("Caine told me that all merch sales go right back into funding the show.")
         End If
         If URLTextBox.Text = "http://reddit.com" OrElse URLTextBox.Text = "https://reddit.com" Then
             Pomni.Speak("Sure, I guess i'll do it.")
         End If
         If URLTextBox.Text = "http://bonzi.link" OrElse URLTextBox.Text = "https://bonzi.link" Then
-            Pomni.Play("Surprised")
-            Pomni.Speak("What are you doing!? This is too dangerous!")
+            Pomni.Play("Announce")
+            Pomni.Speak("Isn't that dangerous? Oh whatever,")
         End If
         If URLTextBox.Text = "http://bing.com" OrElse URLTextBox.Text = "https://bing.com" Then
             Pomni.Speak("Huh. It rhymes with Ping. Anyways,")
@@ -621,7 +552,7 @@ Public Class Form1
             Pomni.Speak("Alright.")
         End If
         If URLTextBox.Text = "http://tiktok.com" OrElse URLTextBox.Text = "https://tiktok.com" Then
-            Pomni.Speak("Wait, isn't TikTok banned?")
+            Pomni.Speak("This is illegal, you know? Oh whatever,")
         End If
         If URLTextBox.Text = "http://discord.com" OrElse URLTextBox.Text = "https://discord.com" Then
             Pomni.Play("Alert")
@@ -632,24 +563,21 @@ Public Class Form1
             Pomni.Speak("The boy with the laser!")
         End If
         If URLTextBox.Text = "http://mugmanfr.neocities.org" OrElse URLTextBox.Text = "http://mugmanfr.neocities.org" Then
-            Pomni.Speak("The mug, the man, the legend!")
+            Pomni.Speak("Mug Man? Eh.")
         End If
         If URLTextBox.Text = "http://alexparr.net" OrElse URLTextBox.Text = "http://alexparr.net" Then
-            Pomni.Play("Alert")
-            Pomni.Speak("POTATO!")
-            Pomni.Play("RestPose")
+            Pomni.Speak("Alex Parr? Eh.")
         End If
         If URLTextBox.Text = "http://kinitopet.com" OrElse URLTextBox.Text = "https://kinitopet.com" Then
-            Pomni.Speak("A complete ripoff, but everybody wants one.")
+            Pomni.Play("Announce")
+            Pomni.Speak("Isn't that dangerous? Oh whatever,")
         End If
         If URLTextBox.Text = "http://myspace.com" OrElse URLTextBox.Text = "https://myspace.com" Then
-            Pomni.Play("Alert")
-            Pomni.Speak("You gotta be old in order to know about this one!")
-            Pomni.Play("RestPose")
+            Pomni.Speak("Um, My Space is bloated with modernization. How about Space Hey instead?")
         End If
         If URLTextBox.Text = "http://meta.com/quest" OrElse URLTextBox.Text = "https://meta.com/quest" Then
-            Pomni.Play("Alert")
-            Pomni.Speak("Great! Now you can come and join the crew in our awesome adventures and games!")
+            Pomni.Play("Decline")
+            Pomni.Speak("What are you doing!? This isn't worth it!")
             Pomni.Play("RestPose")
         End If
         Pomni.Play("Search")
@@ -859,18 +787,21 @@ Public Class Form1
         Dim rnd As New Random()
         Select Case rnd.Next(1, 23)
             Case 1
+                Pomni.Play("Idle2_1")
+                Pomni.Speak("Don't mind me, I'm just juggling out of boredom.")
                 Exit Select
             Case 2
+                Pomni.Play("Announce")
+                Pomni.Speak(My.Settings.Name + ", I've noticed you've been looking tired as a sloth these days.")
+                Exit Select
+            Case 3
+                Pomni.Play("Blink")
+                Pomni.Speak("It's quiet. \emp\Too quiet.")
+                Exit Select
+            Case 4
                 Pomni.Play("Idle2_2")
                 Pomni.Speak("I swear I just saw an exit door!")
                 Pomni.Play("Restpose")
-                Exit Select
-            Case 3
-                Pomni.Play("Confused")
-                Pomni.Speak("Hey! Where did you go?")
-                Pomni.Play("Restpose")
-                Exit Select
-            Case 4
                 Exit Select
             Case 5
                 Exit Select
@@ -1344,7 +1275,7 @@ Public Class Form1
     End Sub
 
     Private Sub WackyWatch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WackyWatch.Click
-        Pomni.Speak("The Wacky Watch tells you about the current events of the Digital Circus! Let's launch its web page to see if there's an update.")
+        Pomni.Speak("Alright, what are they cooking up now?")
         Dim webAddress As String = "https://thewackywatch.com"
         Process.Start(webAddress)
     End Sub
@@ -1395,22 +1326,22 @@ Public Class Form1
             Process.Start(webAddress)
         End If
         If RadioButton2.Checked = True Then
-            Pomni.Play("Congratulate2")
-            Pomni.Speak("Upvotes, please!")
+            Pomni.Play("Announce")
+            Pomni.Speak("Upvotes, please?")
             Pomni.Play("RestPose")
             Dim webAddress As String = "http://old.reddit.com/submit?url=https%3A%2F%2Fcircuspals.w10.site%2F&title=Check%20out%20this%20awesome%20program!%20"
             Process.Start(webAddress)
         End If
         If RadioButton3.Checked = True Then
-            Pomni.Play("Congratulate2")
-            Pomni.Speak("Alright, lets share it!")
+            Pomni.Play("Acknowledge")
+            Pomni.Speak("Sure, let's share it.")
             Pomni.Play("RestPose")
             Dim webAddress As String = "https://bsky.app/intent/compose?text=Check%20out%20this%20awesome%20program!%20%20https%3A//circuspals.w10.site%20via%20Laser%20Boy%20Studios!"
             Process.Start(webAddress)
         End If
         If RadioButton4.Checked = True Then
-            Pomni.Play("Congratulate2")
-            Pomni.Speak("What's App, dog!")
+            Pomni.Play("Acknowledge")
+            Pomni.Speak("That's a pun on ''What's up"".")
             Pomni.Play("RestPose")
             Dim webAddress As String = "https://api.whatsapp.com/send?text=Check out this awesome program%3A https%3A%2F%2Fcircuspals.w10.site%2Fdownload.html"
             Process.Start(webAddress)

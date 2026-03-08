@@ -85,7 +85,6 @@ Public Class Form1
             Pomni = AxAgent1.Characters("Pomni")
             Pomni.LanguageID = 1033
             Pomni.MoveTo(320, 240)
-            Pomni.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273000}"
             Pomni.Show()
         Catch
             My.Computer.Audio.Play(My.Resources.msagent_error, AudioPlayMode.Background)
@@ -559,9 +558,6 @@ Public Class Form1
             Pomni.Speak("Be careful! There is some crazy stuff on this website!")
             Pomni.Play("RestPose")
         End If
-        If URLTextBox.Text = "http://laserboy.neocities.org" OrElse URLTextBox.Text = "http://laserboy.neocities.org" Then
-            Pomni.Speak("The boy with the laser!")
-        End If
         If URLTextBox.Text = "http://mugmanfr.neocities.org" OrElse URLTextBox.Text = "http://mugmanfr.neocities.org" Then
             Pomni.Speak("Mug Man? Eh.")
         End If
@@ -856,44 +852,44 @@ Public Class Form1
 
         Select Case Rnd.Next(1, 26)
             Case 1
-                Pomni.Play("Alert")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("A joke? Sure, I guess.")
             Case 2
-                Pomni.Play("Alert")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("Okay, if you're sure.")
             Case 3
                 Pomni.Play("Alert")
-                Pomni.Speak("A joke? Sure, I've got a funny one.")
+                Pomni.Speak("Uhh, a joke? I'll \emp\try to find a funny one!")
             Case 4
-                Pomni.Play("Alert")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("If you insist.")
             Case 5
-                Pomni.Play("Alert")
-                Pomni.Speak(My.Settings.Name & "? I didn't know you liked my jokes so much.")
+                Pomni.Play("Confused")
+                Pomni.Speak("Why would you want to hear one?")
             Case 6
-                Pomni.Play("Alert")
-                Pomni.Speak("Alright, here we go.")
+                Pomni.Play("Acknowledge")
+                Pomni.Speak("I guess...")
             Case 7
-                Pomni.Play("Alert")
-                Pomni.Speak("Ok, " & My.Settings.Name & ", this one's sure to make you laugh!")
+                Pomni.Play("Acknowledge")
+                Pomni.Speak("OK, " & My.Settings.Name & ", but I \emp\doubt you'll laugh at this one.")
             Case 8
-                Pomni.Play("Announce")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("You asked for it, you got it!")
             Case 9
-                Pomni.Play("Alert")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("Ok, if you're sure.")
             Case 10
-                Pomni.Play("Alert")
+                Pomni.Play("Acknowledge")
                 Pomni.Speak("OK, here goes.")
             Case 11
-                Pomni.Play("Pleased")
-                Pomni.Speak("I've been waiting to do this one, " & My.Settings.Name & "!")
+                Pomni.Play("Announce")
+                Pomni.Speak("How's this one?")
             Case 12
                 Pomni.Play("Acknowledge")
                 Pomni.Speak("Well, if they make you laugh, " & My.Settings.Name & ".")
             Case 13
-                Pomni.Play("Acknowledge")
-                Pomni.Speak("Let's go!")
+                Pomni.Play("Announce")
+                Pomni.Speak("Since Caine's forcing me to tell them, I've got no other option but to say ""Yes"".")
             Case 14
                 Pomni.Play("Alert")
                 Pomni.Speak("Okay, " & My.Settings.Name & ", I've got one.")
@@ -902,203 +898,199 @@ Public Class Form1
                 Pomni.Speak("Anything for you, " & My.Settings.Name & "!")
             Case 16
                 Pomni.Play("Alert")
-                Pomni.Speak("This one's sure to make you laugh!")
+                Pomni.Speak("I'm not sure you'll laugh at this one.")
             Case 17
                 Pomni.Play("Alert")
-                Pomni.Speak("A joke? Sure, I got a ton of them.")
+                Pomni.Speak("A joke? I guess, though there's only a few.")
             Case 18
                 Pomni.Play("Alert")
-                Pomni.Speak("Sure thing, " & My.Settings.Name & ".")
+                Pomni.Speak("Sure thing, " & My.Settings.Name & "!")
             Case 19
                 Pomni.Play("Alert")
-                Pomni.Speak("OK, I've got a good one for you.")
+                Pomni.Speak("Be warned, these jokes are \emp\not going to be good!")
             Case 20
                 Pomni.Play("Alert")
-                Pomni.Speak("A joke? Sure thing, " & My.Settings.Name & "!")
+                Pomni.Speak("Wait, a joke? Sure thing, " & My.Settings.Name & "!")
             Case 21
                 Pomni.Play("Alert")
-                Pomni.Speak("OK, " & My.Settings.Name & ", I've got one for you.")
+                Pomni.Speak("OK, " & My.Settings.Name & ", hopefully this one's good enough.")
             Case 22
-                Pomni.Play("Alert")
-                Pomni.Speak("A joke? Sure thing!")
+                Pomni.Play("Confused")
+                Pomni.Speak("A joke? I guess so...")
             Case 23
-                Pomni.Play("Alert")
-                Pomni.Speak("A joke? Why not!")
+                Pomni.Play("Confused")
+                Pomni.Speak("A joke? Alrighty then...")
             Case 24
-                Pomni.Play("Alert")
-                Pomni.Speak("A joke? Okie-Dokie!")
+                Pomni.Play("Confused")
+                Pomni.Speak("A joke? OK sure.")
             Case 25
-                Pomni.Play("Alert")
-                Pomni.Speak(My.Settings.Name & ", Stop! I got a very funny \emp\joke for you!")
+                Pomni.Play("Acknowledge")
+                Pomni.Speak("OK, but don't have high expectations, " & My.Settings.Name & ".")
         End Select
 
         Select Case Rnd.Next(1, 33)
             Case 1
                 Pomni.Play("Explain")
                 Pomni.Speak("Did you hear about the human cannonball? \pau=2000\He got fired!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Get it, because he was blasted out of a cannon?")
+                Pomni.Play("RestPose")
+                Pomni.Speak("It's okay, as I don't find that one funny either.")
             Case 2
                 Pomni.Play("Explain")
                 Pomni.Speak("Why did the clown throw his clock out of the window? \pau=2000\He wanted to see time fly!")
-                Pomni.Play("Giggle")
-                Pomni.Play("Pleased")
-                Pomni.Speak("It took me a while to get that one, but when I did I could not stop laughing!")
+                Pomni.Play("Confused")
+                Pomni.Speak("I \emp\don't know what Caine was thinking while writing that one.")
             Case 3
                 Pomni.Play("Explain")
                 Pomni.Speak("What happened when the magician got mad? \pau=2000\He pulled his \emp\ hare out!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("First time I heard that, I nearly fell off my chair laughing!")
+                Pomni.Play("Announce")
+                Pomni.Speak("And that Hare has been tormenting us ever since.")
             Case 4
                 Pomni.Play("Explain")
                 Pomni.Speak("Why don't some fishes go to school? \pau=2000\Because they don't give a \emp\carp about it!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("I learned that from the french!")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("That was another Caine joke. Send all complaints to him.")
             Case 5
                 Pomni.Play("Explain")
                 Pomni.Speak("How do you raise a baby elephant? \pau=2000\With a fork lift!")
-                Pomni.Play("Congratulate2")
-                Pomni.Speak("Well, of \emp\ course I'm fork lift certified.")
+                Pomni.Play("Confused")
+                Pomni.Speak("Yeah, I don't get that one either.")
             Case 6
                 Pomni.Play("Explain")
                 Pomni.Speak("What do you and a lemon have in common? \pau=2000\You're both sour!")
-                Pomni.Play("Uncertain")
+                Pomni.Play("Idle1_4")
                 Pomni.Speak("Some of these jokes were written by Jax. Blame him.")
             Case 7
                 Pomni.Play("Explain")
                 Pomni.Speak("Where should a monkey go when he loses his tail? \pau=2000\To a retailer!")
-                Pomni.Play("Giggle")
                 Pomni.Play("Think")
                 Pomni.Speak("Come to think of it, does Son \Map=""Go-koo""=""Goku""\ count as one?")
             Case 8
                 Pomni.Play("Explain")
                 Pomni.Speak("Why is Merlin a wizard? \pau=2000\Because he sucks at everything else!")
-                Pomni.Play("Mad")
+                Pomni.Play("Idle1_4")
                 Pomni.Speak("Jax wrote that one. Send all complaints to him.")
             Case 9
                 Pomni.Play("Explain")
                 Pomni.Speak("What does an abstraction feel like? \pau=2000\Darkness consuming you!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("There's a problem I \emp\ know I can handle!")
+                Pomni.Play("Blink")
+                Pomni.Speak("There's a problem I \emp\ unfortunately are not able to handle!")
             Case 10
                 Pomni.Play("Explain")
                 Pomni.Speak("Why does Gangle wear a comedy mask? \pau=2000\To hide his miserable life!")
-                Pomni.Play("Uncertain")
-                Pomni.Speak("That was one of Jax's jokes. Sorry.")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("As you might have guessed, that was another Jax joke.")
             Case 11
                 Pomni.Play("Explain")
                 Pomni.Speak("A clown opened the door for me the other day. \pau=2000\It was a lovely jester!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("I'm talking about Pomni, our \emp\ current member.")
+                Pomni.Play("Announce")
+                Pomni.Speak("There's something definitely wrong with Caine.")
             Case 12
                 Pomni.Play("Explain")
                 Pomni.Speak("Why are my performers always stressed? \pau=2000\Because their job is in tents!")
-                Pomni.Play("Restpose")
-                Pomni.Speak("There's plenty more where \emp\ that came from, " & My.Settings.Name & "!")
+                Pomni.Play("Sad")
+                Pomni.Speak("If only I could find the exit...")
             Case 13
                 Pomni.Play("Explain")
                 Pomni.Speak("And what's the deal with keyboards? These aren't keys, I can't unlock \emp\ anything with this thing! I guess the \emp\ inventor of keyboards thought that they'd be the key to typing.")
-                Pomni.Play("Giggle")
-                Pomni.Speak("That was one of Max's jokes. Thank him for that!")
+                Pomni.Play("Announce")
+                Pomni.Speak("Surprisingly, Caine was able to get in contact with that blue anti-virus bird!")
             Case 14
                 Pomni.Play("Explain")
                 Pomni.Speak("What do you call an escaped prisoner in the metaverse? \pau=2000\A Meta Runner!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Careful not to let him steal your bitcoins!")
+                Pomni.Play("RestPose")
+                Pomni.Speak("I know, that one was pretty bad.")
             Case 15
                 Pomni.Play("Explain")
                 Pomni.Speak("What do you call a group of small copters that deliver packages from the stores? \pau=2000\Worker Drones!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Get it, because these and the blue-eyed robots have the same name?")
+                Pomni.Play("RestPose")
+                Pomni.Speak("At least Caine actually tried on that one.")
             Case 16
                 Pomni.Play("Explain")
                 Pomni.Speak("Why couldn't the plush doll eat her dinner? \pau=2000\Because she's been stuffed for years!")
-                Pomni.Play("Pleased")
-                Pomni.Speak("I saved this joke for one of my human superstars!")
+                Pomni.Play("Congratulate")
+                Pomni.Speak("Not gonna lie, that one was \emp\slightly funny!")
             Case 17
                 Pomni.Play("Explain")
                 Pomni.Speak("What's the perfect detective for your computer? \pau=2000\Microsoft Agents!")
-                Pomni.Play("Acknowledge")
-                Pomni.Speak("Hey! I fall under that category!")
+                Pomni.Play("RestPose")
+                Pomni.Speak("I think I fall under that category, do I?")
             Case 18
                 Pomni.Play("Explain")
                 Pomni.Speak("What does a mix-and-match toy say to an adventure she doesn't feel like going on? \pau=2000\'Buzz off'!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("That one's a classic, even when censored!")
+                Pomni.Play("Announce")
+                Pomni.Speak("You're probably thinking that's a Jax joke, but it's surprisingly not.")
             Case 19
                 Pomni.Play("Explain")
                 Pomni.Speak("What is Kinger's greatest fear? \pau=2000\The exit!")
-                Pomni.Play("Uncertain")
+                Pomni.Play("Idle1_4")
                 Pomni.Speak("That was another one of Jax's jokes. Sorry.")
             Case 20
                 Pomni.Play("Explain")
                 Pomni.Speak("Knock knock! Who's there? Orange! Orange who? Orange you glad this is all a dream?")
-                Pomni.Play("Uncertain")
+                Pomni.Play("Idle1_4")
                 Pomni.Speak("That was once again a Jax joke, I'm sorry.")
             Case 21
                 Pomni.Play("Explain")
                 Pomni.Speak("What is the proper way to respond to a scary monster? \pau=2000\''Zoinks!''")
-                Pomni.Play("Giggle")
-                Pomni.Speak("That was one of Jax's jokes, and believe it or not, I actually kinda chuckled at that one!")
+                Pomni.Play("Announce")
+                Pomni.Speak("That was one of Jax's jokes, and believe it or not, it was not as bad as the rest of them!")
             Case 22
                 Pomni.Play("Explain")
                 Pomni.Speak("I saw the sun go down in the bright orange sky. \pau=2000\I considered it a Sunset Paradise!")
                 Pomni.Play("Restpose")
-                Pomni.Speak("So, you're saying Pomni sounds familiar?")
+                Pomni.Speak("Man, I wish Caine would make adventures like that.")
             Case 23
                 Pomni.Play("Explain")
                 Pomni.Speak("How do you deal with an aligator? \pau=2000\Zap!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Hey, don't panic. It's not that NPC you're emotionally connected to.")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("Caine told me it's not about that NPC I'm emotionally connected to, but I honestly doubt that.")
             Case 24
                 Pomni.Play("Explain")
                 Pomni.Speak("Why couldn't the kid get into the pirate movie? \pau=2000\Because it was rated arr!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Get it, because it's about pirates?")
+                Pomni.Play("Announce")
+                Pomni.Speak("Reminds me of that adventure where Jax crashed our ship and we were forced to swim!")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("What an absolute jerk...")
             Case 25
                 Pomni.Play("Explain")
                 Pomni.Speak("What's the best way to troll a ragdoll? \pau=2000\Deliver centipedes!")
-                Pomni.Play("Uncertain")
-                Pomni.Speak("That was yet another Jax joke. I'm really sorry.")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("As you could already tell, that was another Jax joke.")
             Case 26
                 Pomni.Play("Explain")
                 Pomni.Speak("What is the devil's greatest fear? \pau=2000\Angels!")
-                Pomni.Play("Uncertain")
-                Pomni.Speak("I tried my best on that one.")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("Seems like Caine didn't even try on that one.")
             Case 27
                 Pomni.Play("Explain")
                 Pomni.Speak("I am a website that calls you an idiot and crashes your computer, who am I? \pau=2000\You \emp\don't know who I am!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("It's funny because it's true!")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("There have been times where I had to deal with that website.")
             Case 28
                 Pomni.Play("Explain")
                 Pomni.Speak("Where should you go buy a propane tank? \pau=2000\at a Gaslight District!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Ah yes, the end times \emp\are near.")
+                Pomni.Play("Confused")
+                Pomni.Speak("I know, it doesn't make sense.")
             Case 29
                 Pomni.Play("Explain")
                 Pomni.Speak("What did the Spudsy's burger say to the other burger at the party? \pau=2000\'You're a bit saucy today, aren't you?'")
-                Pomni.Play("Giggle")
-                Pomni.Speak("...")
-                Pomni.Play("Sad")
-                Pomni.Speak("Why aren't you laughing?")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("Look, the majority of these jokes were written by Caine, with some being written by Jax and Max.")
             Case 30
                 Pomni.Play("Explain")
                 Pomni.Speak("What do you call a snowman eating french fries at Spudsy's? \pau=2000\A \Map=""chilly-dog!""=""chilli-dog!""\")
-                Pomni.Play("Blink")
-                Pomni.Speak("You know " & My.Settings.Name & ", a good friend always laughs at your jokes, even if they're bad.")
+                Pomni.Play("Idle1_4")
+                Pomni.Speak("Caine had potential to make it a \Map=""2 out of 10""=""2/10""\ joke, but instead made it a \Map=""1 out of 10.""=""1/10.""\")
             Case 31
                 Pomni.Play("Explain")
                 Pomni.Speak("What is Orbsman's least favorite shape? \pau=2000\Blocks!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("Get it, because he's all but spheres?")
+                Pomni.Play("Announce")
+                Pomni.Speak("I know the majority of these jokes suck, but Caine is the one who's forcing me to tell them.")
             Case 32
                 Pomni.Play("Explain")
                 Pomni.Speak("What's the best antivirus for your computer? \pau=2000\The knights of Guinevere!")
-                Pomni.Play("Giggle")
-                Pomni.Speak("...")
-                Pomni.Play("Sad")
-                Pomni.Speak("Why aren't you laughing?")
+                Pomni.Play("Confused")
+                Pomni.Speak("I don't understand why that's funny either.")
         End Select
     End Sub
     Private Sub TellFact()

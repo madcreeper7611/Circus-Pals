@@ -928,7 +928,7 @@ Public Class Form1
                 Pomni.Speak("OK, but don't have high expectations, " & My.Settings.Name & ".")
         End Select
 
-        Select Case Rnd.Next(1, 33)
+        Select Case Rnd.Next(1, 37)
             Case 1
                 Pomni.Play("Explain")
                 Pomni.Speak("Did you hear about the human cannonball? \pau=2000\He got fired!")
@@ -1091,6 +1091,26 @@ Public Class Form1
                 Pomni.Speak("What's the best antivirus for your computer? \pau=2000\The knights of Guinevere!")
                 Pomni.Play("Confused")
                 Pomni.Speak("I don't understand why that's funny either.")
+            Case 33
+                Pomni.Play("Explain")
+                Pomni.Speak("What did the donkey say to his son before he got out of the car? ""Try not to make an \Map=""\pau=100""=""%$!""\ out of yourself!""")
+                Pomni.Play("Congratulate")
+                Pomni.Speak("That one's got slight potential!")
+            Case 34
+                Pomni.Play("Explain")
+                Pomni.Speak("What were the jester's first words when she entered the circus? \Pit=400\""Where, what? Where am I?""")
+                Pomni.Play("RestPose")
+                Pomni.Speak("If you felt as if that one isn't a joke, you're right, as it's just Caine making fun of me.")
+            Case 35
+                Pomni.Play("Explain")
+                Pomni.Speak("Why shouldn't you press blue buttons? They'll take you to shrimp town!")
+                Pomni.Play("Mad")
+                Pomni.Speak("Caine, I swear to God!")
+            Case 36
+                Pomni.Play("Explain")
+                Pomni.Speak("What does a chess piece say when they completed a task on their to-do list? ""Check!""")
+                Pomni.Play("Announce")
+                Pomni.Speak("I guess that one's supposed to be about Kinger.")
         End Select
     End Sub
     Private Sub TellFact()
@@ -1123,7 +1143,7 @@ Public Class Form1
             Case 12
                 Pomni.Speak("Here's some knowledge for you.")
         End Select
-        Select Case Rnd.Next(1, 33)
+        Select Case Rnd.Next(1, 37)
             Case 1
                 Pomni.Speak("Did you know that Windows 2000 was never meant for consumers? The closest thing was Windows ME, which was more like a buggy Windows 98.")
             Case 2
@@ -1158,8 +1178,7 @@ Public Class Form1
                 Pomni.Speak("Did you know that the first arcade video game, Computer Space, was released in 1971?")
                 Pomni.Speak("That's a year before the first game console for consumers, the Magnavox Odyssey!")
             Case 14
-                Pomni.Speak("Did you know that Baldi's Basics made its debut in 1999?")
-                Pomni.Speak("No, actually it was released in 2018.")
+                Pomni.Speak("Did you know that Baldi's Basics was released in 2018?")
             Case 15
                 Pomni.Speak("Did you know that the Binary Runtime Environment for Wireless, often shortened to Brew, started development in 1999? It was officially introduced 2 years later, in 2001!")
                 Pomni.Speak("Speaking of Brew, I could use one right now!")
@@ -1169,7 +1188,7 @@ Public Class Form1
                 Pomni.Speak("Did you know that composite video was invented in 1954! Yes, you heard that right!")
                 Pomni.Speak("And this whole time, I thought it was invented in the 80's!")
             Case 18
-                Pomni.Speak("Its learning time! Did you know that the Video Home System, more commonly known as VHS, was invented in 1976? It was the competitor to Betamax, and it ended up winning!")
+                Pomni.Speak("It's learning time! Did you know that the Video Home System, more commonly known as VHS, was invented in 1976? It was the competitor to Betamax, and it ended up winning!")
                 Pomni.Speak("Go VHS!")
             Case 19
                 Pomni.Speak("Did you know that the Atari 2600 was the first super popular game console? It wasn't \emp\ always like that, though. It didn't really gain popularity until the release of Space Invaders for the system, which is considered by many to be the killer app.")
@@ -1189,23 +1208,34 @@ Public Class Form1
             Case 25
                 Pomni.Speak("Apparently Glitch Productions has a \Map=""Blue Sky""=""Bluesky""\ account now! You can now follow them for future Digital Circus episodes!")
             Case 26
-                Pomni.Speak("Apparently you can download a virus-free version of BonziBUDDY! But back then, I was still suspicious of the gorilla, so I would often terminate anything related to him, including the virus-free one.")
-                Pomni.Speak("Thankfully after the conclusion of his vlogging series, I've decided to spare BonziBUDDY Rewritten!")
+                Pomni.Speak("Apparently you can download a virus-free version of BonziBUDDY! But back then, Caine was still suspicious of the gorilla, so he would often terminate anything related to him, including the virus-free one.")
+                Pomni.Speak("After the conclusion of his vlogging series, Caine has finally decided to spare BonziBUDDY Rewritten!")
             Case 27
                 Pomni.Speak("Did you know that the origins of Chess can be traced all the way back to a 7th century game in India called \Map=""Chot er aughnga?""=""Chaturanga?""\ It then went through Persia, then through Russia, and finally, it made it to Europe, where the game became what it's known as today!")
             Case 28
-                Pomni.Speak("Did you know there's a program which allows you to have butterflies on your desktop? I wouldn't recommend installing it though. Many people claim it has spyware built into it.")
-                Pomni.Speak("While I don't know if those claims are true, I do know that they also released programs which allows you to have cockroaches, flies, and ladybugs on your desktop.")
+                Pomni.Speak("Did you know there's a program which allows you to have butterflies on your desktop? Caine wouldn't recommend installing it though... many people claim it has spyware inside of it.")
+                Pomni.Speak("While I don't know if those claims are true, I \emp\do know that they have also released programs that allowed you to have cockroaches, flies, and ladybugs on your desktop.")
             Case 29
                 Pomni.Speak("Did you know that \Map=""My Doom""=""Mydoom""\ is considered one of the most destructive computer viruses in the world?")
                 Pomni.Speak("Sources say it caused an estimate of around 38 billion dollars in damages!")
             Case 30
-                Pomni.Speak("Did you know that Genie is considered one of the oldest Microsoft Agent characters in the world?")
+                Pomni.Speak("Did you know that Genie is considered to be one of the oldest Microsoft Agent characters?")
             Case 31
-                Pomni.Speak("Apparently there's a horror game based off of BonziBUDDY which features a pink axolotl!")
-                Pomni.Speak("I'm wondering if he has a virus-free remake too!")
+                Pomni.Speak("Did you know there's a horror game based off of BonziBUDDY which features a pink axolotl!")
+                Pomni.Speak("Ever since Caine heard that, he's been wondering if it has a virus-free remake as well!")
             Case 32
                 Pomni.Speak("Did you know that Beta 1 of Microsoft Agent shared a lot of similarities with it's predecessor, Microsoft Actor?")
+            Case 33
+                Pomni.Speak("Apparently, there is a more destructive version of BonziBUDDY! Caine also told me there's an even more destructive version as well!")
+                Pomni.Speak("Neither Caine or I recommend you try to download and run either of those versions, let alone the original program!")
+            Case 34
+                Pomni.Speak("Did you know that Toy Story 2 almost never existed? It happened in 1998, when a Pixar employee accidentally typed a faulty command that ended up deleting the \emp\entire movie file-by-file!")
+                Pomni.Speak("Thankfully, one of their technical directors, Galyn Susman, had a local copy of the movie at home, which allowed for the movie to be successfully recovered!")
+            Case 35
+                Pomni.Speak("Did you know that Creeper is considered to be the first computer worm that was ever created? The creator of the program \emp\also created another program called Reaper, which can be considered as the first antivirus software.")
+            Case 36
+                Pomni.Speak("Did you know there are around 10 quintillion bugs in the world? For instance, there are around 8 billion people in the world, which would mean there would be around 120 million bugs for each person!")
+                Pomni.Speak("I'm certain Kinger would love to hear that fact...")
         End Select
         Pomni.Play("ReadContinued")
         Select Case Rnd.Next(1, 16)

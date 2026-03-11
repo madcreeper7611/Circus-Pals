@@ -1120,7 +1120,7 @@ Public Class Form1
                 Caine.Speak(My.Settings.Name & ", Stop! I got a very funny \emp\joke for you!")
         End Select
 
-        Select Case Rnd.Next(1, 33)
+        Select Case Rnd.Next(1, 37)
             Case 1
                 Caine.Play("Explain")
                 Caine.Speak("Did you hear about the human cannonball? \pau=2000\He got fired!")
@@ -1170,7 +1170,7 @@ Public Class Form1
                 Caine.Speak("There's a problem I \emp\ know I can handle!")
             Case 10
                 Caine.Play("Explain")
-                Caine.Speak("Why does Gangle wear a comedy mask? \pau=2000\To hide his miserable life!")
+                Caine.Speak("Why does Gangle wear a comedy mask? \pau=2000\To hide her miserable life!")
                 Caine.Play("Uncertain")
                 Caine.Speak("That was one of Jax's jokes. Sorry.")
             Case 11
@@ -1287,6 +1287,26 @@ Public Class Form1
                 Caine.Speak("...")
                 Caine.Play("Sad")
                 Caine.Speak("Why aren't you laughing?")
+            Case 33
+                Caine.Play("Explain")
+                Caine.Speak("What did the donkey say to his son before he got out of the car? ""Try not to make an ass out of yourself!""")
+                Caine.Play("Blink")
+                Caine.Speak("I hope his son behaved properly.")
+            Case 34
+                Caine.Play("Explain")
+                Caine.Speak("What were the jester's first words when she entered the circus? \Pit=400\""Where, what? Where am I?""")
+                Caine.Play("Silly")
+                Caine.Speak("You probably already get that one!")
+            Case 35
+                Caine.Play("Explain")
+                Caine.Speak("Why shouldn't you press blue buttons? They'll take you to shrimp town!")
+                Caine.Play("Giggle")
+                Caine.Speak("That was a risky one... I really hope you're laughing.")
+            Case 36
+                Caine.Play("Explain")
+                Caine.Speak("What does a chess piece say when they completed a task on their to-do list? ""Check!""")
+                Caine.Play("Giggle")
+                Caine.Speak("I can assure you I hear that a lot here!")
         End Select
     End Sub
     Private Sub TellFact()
@@ -1319,7 +1339,7 @@ Public Class Form1
             Case 12
                 Caine.Speak("Here's some knowledge for you.")
         End Select
-        Select Case Rnd.Next(1, 33)
+        Select Case Rnd.Next(1, 37)
             Case 1
                 Caine.Speak("Did you know that Windows 2000 was never meant for consumers? The closest thing was Windows ME, which was more like a buggy Windows 98.")
             Case 2
@@ -1365,7 +1385,7 @@ Public Class Form1
                 Caine.Speak("Did you know that composite video was invented in 1954! Yes, you heard that right!")
                 Caine.Speak("And this whole time, I thought it was invented in the 80's!")
             Case 18
-                Caine.Speak("Its learning time! Did you know that the Video Home System, more commonly known as VHS, was invented in 1976? It was the competitor to Betamax, and it ended up winning!")
+                Caine.Speak("It's learning time! Did you know that the Video Home System, more commonly known as VHS, was invented in 1976? It was the competitor to Betamax, and it ended up winning!")
                 Caine.Speak("Go VHS!")
             Case 19
                 Caine.Speak("Did you know that the Atari 2600 was the first super popular game console? It wasn't \emp\ always like that, though. It didn't really gain popularity until the release of Space Invaders for the system, which is considered by many to be the killer app.")
@@ -1390,18 +1410,28 @@ Public Class Form1
             Case 27
                 Caine.Speak("Did you know that the origins of Chess can be traced all the way back to a 7th century game in India called \Map=""Chot er aughnga?""=""Chaturanga?""\ It then went through Persia, then through Russia, and finally, it made it to Europe, where the game became what it's known as today!")
             Case 28
-                Caine.Speak("Did you know there's a program which allows you to have butterflies on your desktop? I wouldn't recommend installing it though. Many people claim it has spyware built into it.")
-                Caine.Speak("While I don't know if those claims are true, I do know that they also released programs which allows you to have cockroaches, flies, and ladybugs on your desktop.")
+                Caine.Speak("Did you know there's a program which allows you to have butterflies on your desktop? I wouldn't recommend installing it though... many people claim it has spyware inside of it.")
+                Caine.Speak("While I don't know if those claims are true, I \emp\do know that they have also released programs that allowed you to have cockroaches, flies, and ladybugs on your desktop.")
             Case 29
                 Caine.Speak("Did you know that \Map=""My Doom""=""Mydoom""\ is considered one of the most destructive computer viruses in the world?")
                 Caine.Speak("Sources say it caused an estimate of around 38 billion dollars in damages!")
             Case 30
-                Caine.Speak("Did you know that Genie is considered one of the oldest Microsoft Agent characters in the world?")
+                Caine.Speak("Did you know that Genie is considered to be one of the oldest Microsoft Agent characters?")
             Case 31
                 Caine.Speak("Apparently there's a horror game based off of BonziBUDDY which features a pink axolotl!")
-                Caine.Speak("I'm wondering if he has a virus-free remake too!")
+                Caine.Speak("I'm wondering if he has a virus-free remake as well!")
             Case 32
                 Caine.Speak("Did you know that Beta 1 of Microsoft Agent shared a lot of similarities with it's predecessor, Microsoft Actor?")
+            Case 33
+                Caine.Speak("Apparently, there is a more destructive version of BonziBUDDY! I've also heard there's an even more destructive version as well!")
+                Caine.Speak("I don't recommend you try to download and run either of those versions, let alone the original program!")
+            Case 34
+                Caine.Speak("Did you know that Toy Story 2 almost never existed? It happened in 1998, when a Pixar employee accidentally typed a faulty command that ended up deleting the \emp\entire movie file-by-file!")
+                Caine.Speak("Thankfully, one of their technical directors, Galyn Susman, had a local copy of the movie at home, which allowed for the movie to be successfully recovered!")
+            Case 35
+                Caine.Speak("Did you know that Creeper is considered to be the first computer worm that was ever created? The creator of the program \emp\also created another program called Reaper, which can be considered as the first antivirus software.")
+            Case 36
+                Caine.Speak("Did you know there are around 10 quintillion bugs in the world? For instance, there are around 8 billion people in the world, which would mean there would be around 120 million bugs for each person!")
         End Select
         Caine.Play("ReadContinued")
         Select Case Rnd.Next(1, 16)

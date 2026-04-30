@@ -163,7 +163,7 @@ Partial Class Form1
         '
         'TabPage1
         '
-        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.TabPage1.BackColor = System.Drawing.Color.Gray
         Me.TabPage1.BackgroundImage = Global.CircusPals.My.Resources.Resources.CaineBG
         Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage1.Controls.Add(Me.BuildNumber)
@@ -181,6 +181,7 @@ Partial Class Form1
         'BuildNumber
         '
         Me.BuildNumber.BackColor = System.Drawing.Color.Transparent
+        Me.BuildNumber.ForeColor = System.Drawing.Color.Silver
         Me.BuildNumber.Location = New System.Drawing.Point(181, 8)
         Me.BuildNumber.Name = "BuildNumber"
         Me.BuildNumber.Size = New System.Drawing.Size(212, 15)
@@ -192,6 +193,7 @@ Partial Class Form1
         '
         Me.CurrentDate.AutoSize = True
         Me.CurrentDate.BackColor = System.Drawing.Color.Transparent
+        Me.CurrentDate.ForeColor = System.Drawing.Color.Silver
         Me.CurrentDate.Location = New System.Drawing.Point(9, 8)
         Me.CurrentDate.Name = "CurrentDate"
         Me.CurrentDate.Size = New System.Drawing.Size(30, 13)
@@ -204,7 +206,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.PictureBox3)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.URLTextBox)
-        Me.GroupBox2.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Silver
         Me.GroupBox2.Location = New System.Drawing.Point(6, 113)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(390, 81)
@@ -229,7 +231,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.ForeColor = System.Drawing.Color.Silver
         Me.Label5.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Label5.Location = New System.Drawing.Point(6, 16)
         Me.Label5.Name = "Label5"
@@ -253,7 +255,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.KeywordTextBox)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Silver
         Me.GroupBox1.Location = New System.Drawing.Point(6, 26)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(390, 81)
@@ -278,7 +280,7 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.ForeColor = System.Drawing.Color.Silver
         Me.Label4.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Label4.Location = New System.Drawing.Point(6, 16)
         Me.Label4.Name = "Label4"
@@ -298,7 +300,7 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage2.BackgroundImage = Global.CircusPals.My.Resources.Resources.CaineBG
         Me.TabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage2.Controls.Add(Me.PictureBox13)
         Me.TabPage2.Controls.Add(Me.Label15)
@@ -348,7 +350,7 @@ Partial Class Form1
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.ForeColor = System.Drawing.Color.Silver
         Me.Label15.Location = New System.Drawing.Point(212, 96)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(67, 13)
@@ -360,7 +362,7 @@ Partial Class Form1
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.Black
+        Me.Label24.ForeColor = System.Drawing.Color.Silver
         Me.Label24.Location = New System.Drawing.Point(212, 208)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(67, 13)
@@ -383,7 +385,7 @@ Partial Class Form1
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.ForeColor = System.Drawing.Color.Silver
         Me.Label22.Location = New System.Drawing.Point(127, 208)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(46, 13)
@@ -417,7 +419,7 @@ Partial Class Form1
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.ForeColor = System.Drawing.Color.Silver
         Me.Label19.Location = New System.Drawing.Point(33, 208)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(46, 13)
@@ -440,7 +442,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.ForeColor = System.Drawing.Color.Silver
         Me.Label7.Location = New System.Drawing.Point(313, 208)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(46, 13)
@@ -463,10 +465,10 @@ Partial Class Form1
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.ForeColor = System.Drawing.Color.Silver
         Me.Label11.Location = New System.Drawing.Point(306, 96)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 13)
+        Me.Label11.Size = New System.Drawing.Size(67, 13)
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "36 - Installed"
         '
@@ -486,7 +488,7 @@ Partial Class Form1
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.ForeColor = System.Drawing.Color.Silver
         Me.Label12.Location = New System.Drawing.Point(120, 96)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(61, 13)
@@ -498,7 +500,7 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.ForeColor = System.Drawing.Color.Silver
         Me.Label10.Location = New System.Drawing.Point(33, 94)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(46, 13)
@@ -690,7 +692,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label1.ForeColor = System.Drawing.Color.Silver
         Me.Label1.Location = New System.Drawing.Point(25, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(334, 39)
@@ -716,7 +718,7 @@ Partial Class Form1
         '
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label26.ForeColor = System.Drawing.Color.Silver
         Me.Label26.Location = New System.Drawing.Point(27, 199)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(95, 13)
@@ -756,19 +758,19 @@ Partial Class Form1
         Me.ExitToolStripMenu.Name = "ContextMenuStrip1"
         Me.ExitToolStripMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.ExitToolStripMenu.ShowImageMargin = False
-        Me.ExitToolStripMenu.Size = New System.Drawing.Size(125, 48)
+        Me.ExitToolStripMenu.Size = New System.Drawing.Size(131, 48)
         '
         'ToolStripMenuItem
         '
         Me.ToolStripMenuItem.Enabled = False
         Me.ToolStripMenuItem.Name = "ToolStripMenuItem"
-        Me.ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.ToolStripMenuItem.Text = "Circus Pals 2.0"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         Me.ExitToolStripMenuItem.ToolTipText = "Exits the Application."
         '
@@ -779,7 +781,7 @@ Partial Class Form1
         '
         'Button20
         '
-        Me.Button20.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button20.BackColor = System.Drawing.Color.Gray
         Me.Button20.ForeColor = System.Drawing.Color.White
         Me.Button20.Location = New System.Drawing.Point(138, 335)
         Me.Button20.Name = "Button20"
@@ -790,7 +792,7 @@ Partial Class Form1
         '
         'Button16
         '
-        Me.Button16.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button16.BackColor = System.Drawing.Color.Gray
         Me.Button16.ForeColor = System.Drawing.Color.White
         Me.Button16.Location = New System.Drawing.Point(396, 335)
         Me.Button16.Name = "Button16"
@@ -801,7 +803,7 @@ Partial Class Form1
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button10.BackColor = System.Drawing.Color.Gray
         Me.Button10.ForeColor = System.Drawing.Color.White
         Me.Button10.Location = New System.Drawing.Point(7, 335)
         Me.Button10.Name = "Button10"
@@ -812,7 +814,7 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button6.BackColor = System.Drawing.Color.Gray
         Me.Button6.ForeColor = System.Drawing.Color.White
         Me.Button6.Location = New System.Drawing.Point(472, 335)
         Me.Button6.Name = "Button6"
@@ -823,7 +825,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button5.BackColor = System.Drawing.Color.Gray
         Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.Location = New System.Drawing.Point(548, 335)
         Me.Button5.Name = "Button5"
@@ -834,7 +836,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.BackColor = System.Drawing.Color.Gray
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(66, 335)
         Me.Button1.Name = "Button1"
@@ -872,7 +874,7 @@ Partial Class Form1
         '
         Me.JungleUpdate.BackColor = System.Drawing.Color.Transparent
         Me.JungleUpdate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.JungleUpdate.Image = CType(resources.GetObject("JungleUpdate.Image"), System.Drawing.Image)
+        Me.JungleUpdate.Image = Global.CircusPals.My.Resources.Resources.CircusUpdate
         Me.JungleUpdate.InitialImage = Nothing
         Me.JungleUpdate.Location = New System.Drawing.Point(410, -2)
         Me.JungleUpdate.Name = "JungleUpdate"
@@ -1117,7 +1119,7 @@ Partial Class Form1
         'UtilPanel2
         '
         Me.UtilPanel2.BackColor = System.Drawing.Color.Red
-        Me.UtilPanel2.BackgroundImage = CType(resources.GetObject("UtilPanel2.BackgroundImage"), System.Drawing.Image)
+        Me.UtilPanel2.BackgroundImage = Global.CircusPals.My.Resources.Resources.DialogBackground
         Me.UtilPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.UtilPanel2.Controls.Add(Me.Button15)
         Me.UtilPanel2.Controls.Add(Me.MonthCalendar1)
@@ -1131,7 +1133,7 @@ Partial Class Form1
         '
         'Button15
         '
-        Me.Button15.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button15.BackColor = System.Drawing.Color.Gray
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.ForeColor = System.Drawing.Color.White
         Me.Button15.Location = New System.Drawing.Point(143, 181)
@@ -1146,10 +1148,11 @@ Partial Class Form1
         Me.MonthCalendar1.Location = New System.Drawing.Point(13, 22)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 34
+        Me.MonthCalendar1.TitleBackColor = System.Drawing.Color.Gray
         '
         'Button23
         '
-        Me.Button23.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button23.BackColor = System.Drawing.Color.Gray
         Me.Button23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.ForeColor = System.Drawing.Color.White
         Me.Button23.Location = New System.Drawing.Point(13, 181)
@@ -1192,18 +1195,18 @@ Partial Class Form1
         Me.GameMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CircusMasterTicTacToe, Me.ContestantMatchingGameToolStripMenuItem})
         Me.GameMenu.Name = "GameMenu"
         Me.GameMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.GameMenu.Size = New System.Drawing.Size(221, 48)
+        Me.GameMenu.Size = New System.Drawing.Size(216, 48)
         '
         'CircusMasterTicTacToe
         '
         Me.CircusMasterTicTacToe.Name = "CircusMasterTicTacToe"
-        Me.CircusMasterTicTacToe.Size = New System.Drawing.Size(220, 22)
+        Me.CircusMasterTicTacToe.Size = New System.Drawing.Size(215, 22)
         Me.CircusMasterTicTacToe.Text = "Circus Master Tic-Tac-Toe"
         '
         'ContestantMatchingGameToolStripMenuItem
         '
         Me.ContestantMatchingGameToolStripMenuItem.Name = "ContestantMatchingGameToolStripMenuItem"
-        Me.ContestantMatchingGameToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ContestantMatchingGameToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
         Me.ContestantMatchingGameToolStripMenuItem.Text = "Contestant Matching Game"
         '
         'AxAgent1
@@ -1221,7 +1224,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.CircusPals.My.Resources.Resources.CircusBackground
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(624, 361)
+        Me.ClientSize = New System.Drawing.Size(632, 366)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.UtilPanel2)
         Me.Controls.Add(Me.UtilPanel1)
